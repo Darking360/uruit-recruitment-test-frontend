@@ -1,5 +1,17 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import posed, { PoseGroup } from 'react-pose';
+
+const RowAnimation = posed.div({
+    enter: {
+      opacity: 1,
+      delay: 300
+    },
+    exit: {
+      opacity: 0,
+      transition: { duration: 150 }
+    }
+  });
 
 const HistoryContainer = styled.div`
     width: 80%;
@@ -37,7 +49,7 @@ const HistoryGrid = styled.section`
     }
 `;
 
-const HistoryItem = styled.div`
+const HistoryItem = styled(RowAnimation)`
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
@@ -72,7 +84,9 @@ class History extends Component {
                         <span>Round</span>
                         <span>Winner</span>
                     </HistoryItem>
-                    { this.renderItems() }
+                    <PoseGroup>
+                        { this.renderItems() }
+                    </PoseGroup>
                 </HistoryGrid>
             </HistoryContainer>
         );
