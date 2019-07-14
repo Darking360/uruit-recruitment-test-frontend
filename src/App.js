@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import Spinner from './components/Spinner';
+import GameSetup from './containers/GameSetup';
+import styled from 'styled-components';
+
+const AppContainer = styled.section`
+  background-color: #333;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+// Add state to manage current screen
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Spinner />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer className="App">
+      <Spinner width="10%" />
+      <GameSetup />
+    </AppContainer>
   );
 }
 

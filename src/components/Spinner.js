@@ -44,7 +44,7 @@ const dash2 = keyframes`
 `
 
 const SpinnerWrapper = styled.div`
-    width: 25%;
+    width: ${({ width }) => width ? width : '25%'};
     position: relative;
     margin: 0px auto;
     div.ad15 {
@@ -123,8 +123,8 @@ const SpinnerWrapper = styled.div`
     }
 `;
 
-const Spinner = () => (
-    <SpinnerWrapper>
+const Spinner = (props) => (
+    <SpinnerWrapper {...props}>
         <svg class="overwatch-logo" viewBox="0 0 1000 1000">
         <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" x="200" y="210">
             <defs></defs>
