@@ -6,10 +6,6 @@ const RowAnimation = posed.div({
     enter: {
       opacity: 1,
       delay: 300
-    },
-    exit: {
-      opacity: 0,
-      transition: { duration: 150 }
     }
   });
 
