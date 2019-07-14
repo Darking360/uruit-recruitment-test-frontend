@@ -2,10 +2,10 @@ import axios from 'axios';
 
 const baseUrl = process.env.NODE_ENV === 'production' ? 'tbd' : 'http://localhost:3000';
 
-export function createUser(username, userAvatar) {
+export function createUser(username, avatar) {
     return axios.post(`${baseUrl}/users`, {
         username,
-        userAvatar
+        avatar
     });
 }
 

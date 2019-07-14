@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { GameFieldSet, GameButton } from '../components/Form';
 import AvatarPicker from '../components/AvatarPicker';
 import styled from 'styled-components';
+import Spinner from '../components/Spinner';
+import Swal from 'sweetalert2'
 import { createUser, createGame } from '../api';
 
 const GameSetupContainer = styled.section`
@@ -47,7 +49,8 @@ class GameSetup extends Component {
         player1: '',
         player2: '',
         player1Avatar: 'OW-icon_bastion',
-        player2Avatar: 'OW-icon_mercy'
+        player2Avatar: 'OW-icon_mercy',
+        loading: false
     };
 
     onChange = ({ target: { name, value } }) => {
@@ -64,14 +67,31 @@ class GameSetup extends Component {
     }
 
     handleGameCreation = () => {
-        const { player1, player2 } = this.state;
-        
+        const { player1, player2, player1Avatar, player2Avatar } = this.state;
+        const { setGame } = this.props;
+        this.setState({ loading: true }, async () => {
+            try {
+                const { data: player1Response } = await createUser(player1, player1Avatar);
+                const { data: player2Response } = await createUser(player2, player2Avatar);
+                const game = await createGame(player1Response._id, player2Response._id);
+                setGame(player1Response, player2Response, game);
+            } catch (error) {
+                const { data } = error.response;
+                Swal.fire({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: data.errors[0].msg
+                })
+            }
+        });
     }
 
     render() {
-        const disabled = this.isDisabled()
+        const { loading } = this.state;
+        const disabled = this.isDisabled();
         return (
             <GameSetupContainer>
+                <Spinner width="10%" />
                 <h2>Welcome to the Hill</h2>
                 <h3>Get your name and the hill will provide you an avatar</h3>
                 <SetupRow>
@@ -103,7 +123,17 @@ class GameSetup extends Component {
                     </PlayerOptions>
                 </SetupRow>
                 <div className="action-row">
-                    <GameButton onClick={this.handleGameCreation} disabled={disabled} fsize="4em">Play</GameButton>
+                    <GameButton 
+                        onClick={this.handleGameCreation} 
+                        disabled={disabled || loading} 
+                        fsize="4em"
+                        loadingAction={loading}
+                    >
+                        {
+                            loading ? (<Spinner width="5rem" />)
+                            : "Play"
+                        }
+                    </GameButton>
                 </div>
             </GameSetupContainer>
         );

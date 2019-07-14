@@ -1,5 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
+import mojs from 'mo-js';
+import ReactDOM from 'react-dom';
 import styled, { keyframes } from 'styled-components';
+
+export const floatingEffect = keyframes`
+    0% {
+        box-shadow: 0 2px 8px rgba(255,255,255,0.30), 0 3px 6px rgba(255,255,255,0.22);
+    }
+
+    50% {
+        box-shadow: 0 14px 28px rgba(255,255,255,0.25), 0 10px 10px rgba(255,255,255,0.22);
+    }
+
+    100% {
+        box-shadow: 0 2px 8px rgba(255,255,255,0.30), 0 3px 6px rgba(255,255,255,0.22);
+    }
+`;
 
 const avatars = [
     'OW-icon_bastion',
@@ -26,7 +42,7 @@ const avatars = [
 ];
 
 // Add floating animation to avatar
-const Avatar = styled.img`
+export const Avatar = styled.img`
     width: 6rem;
     height: 6rem;
     object-fit: fill;
@@ -34,32 +50,64 @@ const Avatar = styled.img`
     border-radius: 50%;
     padding: 1rem;
     cursor: pointer;
+    animation: ${floatingEffect} 3s infinite;
+    transition: all 2s ease-in-out;
+    position: relative;
 `;
 
-const AvatarPickerContainer = styled.div`
+export const AvatarPickerContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 `;
 
-const AvatarPicker = ({ value, onChange, name }) => {
+class AvatarPicker extends Component {
 
-    const handleChange = () => {
-        const nextAvatar = 'OW-icon_dva';// random number to get next avatar between 1 and 21
-        console.log(nextAvatar)
-        onChange(name, nextAvatar);
+    playBurst = () => {
+        const color = '#d38627';
+        if (this.moAnimation) this.moAnimation.replay();
+        else {
+            this.moAnimation = new mojs.Burst({
+                parent:   ReactDOM.findDOMNode(this.avatar),
+                radius:   { 80: 110 },
+                angle:    30,
+                count:    14,
+                children: {
+                radius:       8,
+                fill:         color,
+                scale:        { 1: 0, easing: 'sin.in' },
+                pathScale:    [ .9, null ],
+                degreeShift:  [ 13, null ],
+                duration:     [ 500, 700 ],
+                }
+            });
+            this.moAnimation.play();
+        }
     }
 
-    // TODO Add moJS on click action and animation of floating
-    return (
-        <AvatarPickerContainer>
-            <Avatar 
-                src={`../images/${value}.svg`}
-                alt='Avatar preview'
-                onClick={handleChange}
-            />
-        </AvatarPickerContainer>
-    );
+    handleChange = () => {
+        const { onChange, name } = this.props;
+        this.playBurst();
+        const nextAvatar = Math.floor(Math.random() * 21) + 1;// random number to get next avatar between 1 and 21
+        onChange(name, avatars[nextAvatar-1]);
+    }
+
+    render() {
+        const { value } = this.props;
+        return (
+            <AvatarPickerContainer ref={avatar => this.avatar = avatar}>
+                <Avatar 
+                    
+                    src={`../images/${value}.svg`}
+                    alt='Avatar preview'
+                    onClick={this.handleChange}
+                />
+            </AvatarPickerContainer>
+        );
+    }
+    
+    
 }
 
 export default AvatarPicker;

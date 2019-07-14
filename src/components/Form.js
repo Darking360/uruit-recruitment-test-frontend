@@ -48,6 +48,18 @@ export const GameButton = styled.button`
         cursor: inherit;
         background-color: grey;
     `}
+    ${({ loadingAction }) => loadingAction && `
+        font-size: unset;
+        padding: 1rem;
+        border-radius: 40px;
+        &:hover {
+            padding: 1rem;
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px;
+        }
+    `}
 `;
 
 export const GameField = styled.input`
