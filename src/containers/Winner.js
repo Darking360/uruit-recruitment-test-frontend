@@ -14,9 +14,6 @@ const WinnerContainer = styled.section`
 
 const Winner = (props) => {
 
-    console.log('PROPS ---->');
-    console.log(props);
-
     const winner = props[props.game.winner];
 
     return (

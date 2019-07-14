@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Winner matches snapshot 1`] = `
+<Winner
+  game={
+    Object {
+      "_id": 1,
+      "player1": 1,
+      "player2": 2,
+      "plays": Array [
+        Object {
+          "player1Play": 1,
+          "player2Play": 2,
+          "winner": "player2",
+        },
+        Object {
+          "player1Play": 1,
+          "player2Play": 2,
+          "winner": "player1",
+        },
+        Object {
+          "player1Play": 1,
+          "player2Play": 2,
+          "winner": "player2",
+        },
+        Object {
+          "player1Play": 1,
+          "player2Play": 1,
+          "winner": null,
+        },
+        Object {
+          "player1Play": 1,
+          "player2Play": 2,
+          "winner": "player2",
+        },
+      ],
+      "winner": "player2",
+    }
+  }
+  player1={
+    Object {
+      "_id": 1,
+      "avatar": "some",
+      "username": "Miguel",
+    }
+  }
+  player2={
+    Object {
+      "_id": 2,
+      "avatar": "some",
+      "username": "Juan",
+    }
+  }
+>
+  <styled.section>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "dlEdlY",
+            "rules": Array [
+              "
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+",
+            ],
+          },
+          "displayName": "styled.section",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "section",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <section
+        className="sc-EHOje dlEdlY"
+      >
+        <h2>
+          We have a Winner!!
+        </h2>
+        <AvatarPicker
+          name="player1"
+          onChange={[Function]}
+          present={true}
+          value="some"
+        >
+          <styled.div>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-ifAKCX",
+                    "isStatic": true,
+                    "lastClassName": "bpOaAN",
+                    "rules": Array [
+                      "
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-ifAKCX",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={[Function]}
+            >
+              <div
+                className="sc-ifAKCX bpOaAN"
+              >
+                <styled.img
+                  alt="Avatar preview"
+                  onClick={null}
+                  present={true}
+                  src="../images/some.svg"
+                >
+                  <StyledComponent
+                    alt="Avatar preview"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": false,
+                          "lastClassName": "QvEoA",
+                          "rules": Array [
+                            "
+    width: 6rem;
+    height: 6rem;
+    object-fit: fill;
+    border: 3px solid rgba(255,255,255,0.75);
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    animation: ",
+                            Keyframes {
+                              "id": "sc-keyframes-jTmlpk",
+                              "inject": [Function],
+                              "name": "jTmlpk",
+                              "rules": Array [
+                                "@-webkit-keyframes jTmlpk{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 14px 28px rgba(255,255,255,0.25),0 10px 10px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+                                "@keyframes jTmlpk{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 14px 28px rgba(255,255,255,0.25),0 10px 10px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+                              ],
+                              "toString": [Function],
+                            },
+                            " 3s infinite;
+    transition: all 2s ease-in-out;
+    position: relative;
+    ",
+                            [Function],
+                            "
+",
+                          ],
+                        },
+                        "displayName": "styled.img",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "img",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={null}
+                    present={true}
+                    src="../images/some.svg"
+                  >
+                    <img
+                      alt="Avatar preview"
+                      className="sc-bxivhb QvEoA"
+                      onClick={null}
+                      src="../images/some.svg"
+                    />
+                  </StyledComponent>
+                </styled.img>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </AvatarPicker>
+        <h3>
+          Juan
+           is the new EMPEROR!
+        </h3>
+        <styled.button>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "evnORH",
+                  "rules": Array [
+                    "
+    background-color: #d38627;
+    color: white;
+    padding: 1rem 2rem;
+    padding-right: 3rem;
+    font-family: 'Bigno';
+    border: none;
+    font-weight: bold;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-size: ",
+                    [Function],
+                    ";
+    &:focus, &:active {
+        outline: none;
+    }
+    animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-cyknLF",
+                      "inject": [Function],
+                      "name": "cyknLF",
+                      "rules": Array [
+                        "@-webkit-keyframes cyknLF{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 19px 28px rgba(255,255,255,0.30),0 15px 12px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+                        "@keyframes cyknLF{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 19px 28px rgba(255,255,255,0.30),0 15px 12px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 3s infinite;
+    &:hover {
+        padding: 1rem 3rem;
+        padding-right: 4rem;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+    ",
+                    [Function],
+                    "
+    ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <button
+              className="sc-bdVaJa evnORH"
+            >
+              Play Again
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </section>
+    </StyledComponent>
+  </styled.section>
+</Winner>
+`;
