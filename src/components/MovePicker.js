@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
-import mojs from 'mo-js';
 import ReactDOM from 'react-dom';
 import styled, { keyframes } from 'styled-components';
 import { floatingEffect, Avatar, AvatarPickerContainer } from './AvatarPicker';
+
+let mojs = {}
+
+// Validation in order to work with Node environments build phase
+if (typeof window !== `undefined` && process.env.NODE_ENV !== 'test') {
+  mojs = require('mo-js');
+}
 
 const movements = {
     '1': 'paper',

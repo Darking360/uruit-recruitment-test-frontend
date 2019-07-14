@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
+import PropTypes from 'prop-types';
 
 const rotate = keyframes`
     100%{
@@ -158,5 +159,13 @@ const Spinner = (props) => (
         </svg>
     </SpinnerWrapper>
 );
+
+Spinner.propTypes = {
+    width: PropTypes.string
+};
+
+Spinner.defaultProps = {
+    width: '5em'
+};
 
 export default Spinner;
