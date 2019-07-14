@@ -42,7 +42,7 @@ const PlayerOptions = styled.div`
     margin-bottom: 1rem;
 `;
 
-const SetupRow = styled.section`
+const SetupRow = styled.form`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -73,7 +73,9 @@ class GameSetup extends Component {
         return !(player1.length && player2.length);
     }
 
-    handleGameCreation = () => {
+    handleGameCreation = (e) => {
+        e.preventDefault();
+        // TODO Add validations here please!
         const { player1, player2, player1Avatar, player2Avatar } = this.state;
         const { setGame } = this.props;
         this.setState({ loading: true }, async () => {
@@ -83,6 +85,8 @@ class GameSetup extends Component {
                 const { data: game } = await createGame(player1Response._id, player2Response._id);
                 setGame(player1Response, player2Response, game);
             } catch (error) {
+                console.log('AIIUDA ---->')
+                console.log(error)
                 if (error.response) {
                     const { data } = error.response;
                     alertError(data.errors[0].msg);
@@ -102,7 +106,7 @@ class GameSetup extends Component {
                 <h1>UruIt Game of Drones</h1>
                 <h2>Welcome to the Hill</h2>
                 <h3>Get your name and the hill will provide you an avatar</h3>
-                <SetupRow>
+                <SetupRow onSubmit={this.handleGameCreation}>
                     <PlayerOptions>
                         <AvatarPicker
                             value={this.state.player1Avatar}
