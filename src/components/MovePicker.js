@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 import { floatingEffect, Avatar, AvatarPickerContainer } from './AvatarPicker';
 
@@ -61,6 +62,8 @@ class MovePicker extends Component {
         onChange(name, value + 1);
     }
 
+    // Add shake phone function
+
     render() {
         const { value } = this.props;
         return (
@@ -75,8 +78,12 @@ class MovePicker extends Component {
             </Container>
         );
     }
-    
-    
 }
+
+MovePicker.propTypes = {
+    value: PropTypes.number.isRequired,
+    onChange: PropTypes.func.isRequired,
+    name: PropTypes.string.isRequired
+};
 
 export default MovePicker;

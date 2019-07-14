@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movement Picker matches snapshot 1`] = `
+<Styled(styled.div)>
+  <Styled(styled.img)
+    alt="Avatar preview"
+    onClick={[Function]}
+    src="../images/paper.png"
+  />
+  <em>
+    Tap the image or shake your phone to change your attack
+  </em>
+  <h3>
+    Attacking with 
+    paper
+  </h3>
+</Styled(styled.div)>
+`;

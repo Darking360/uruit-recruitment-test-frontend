@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar Picker matches snapshot 1`] = `
+<styled.div>
+  <styled.img
+    alt="Avatar preview"
+    onClick={[Function]}
+    src="../images/avatar.svg"
+  />
+</styled.div>
+`;

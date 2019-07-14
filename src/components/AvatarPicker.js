@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import styled, { keyframes } from 'styled-components';
 
@@ -115,8 +116,12 @@ class AvatarPicker extends Component {
             </AvatarPickerContainer>
         );
     }
-    
-    
 }
+
+AvatarPicker.propTypes = {
+    value: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+    name: PropTypes.string.isRequired
+};
 
 export default AvatarPicker;
