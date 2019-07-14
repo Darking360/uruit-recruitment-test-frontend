@@ -30,7 +30,7 @@ const AppOverlay = styled.div`
 class App extends Component {
 
   state = {
-    currentScreen: 'game',
+    currentScreen: 'setup',
     game: null,
     player1: null,
     player2: null,
@@ -43,19 +43,24 @@ class App extends Component {
       case 'setup':
         return <GameSetup setGame={this.setGame} />;
       case 'game':
-        return <Game {...this.state} />
+        return <Game {...this.state} updateGame={this.updateGame} />
       default:
         return <GameSetup />;
     }
   }
 
   setGame = (player1, player2, game) => {
+    console.log(game);
     this.setState({
       player1,
       player2,
       game,
       currentScreen: 'game'
     });
+  }
+
+  updateGame = (game) => {
+    this.setState({ game });
   }
 
   render() {

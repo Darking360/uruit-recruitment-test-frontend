@@ -14,7 +14,7 @@ const Container = styled(AvatarPickerContainer)`
     flex-direction: column;
     font-size: 1.5em;
     em, h3 {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
 `;
 

@@ -3,7 +3,7 @@ import { GameFieldSet, GameButton } from '../components/Form';
 import AvatarPicker from '../components/AvatarPicker';
 import styled from 'styled-components';
 import Spinner from '../components/Spinner';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 import { createUser, createGame } from '../api';
 
 const GameSetupContainer = styled.section`
@@ -73,7 +73,7 @@ class GameSetup extends Component {
             try {
                 const { data: player1Response } = await createUser(player1, player1Avatar);
                 const { data: player2Response } = await createUser(player2, player2Avatar);
-                const game = await createGame(player1Response._id, player2Response._id);
+                const { data: game } = await createGame(player1Response._id, player2Response._id);
                 setGame(player1Response, player2Response, game);
             } catch (error) {
                 const { data } = error.response;
