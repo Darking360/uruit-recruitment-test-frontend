@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import MovePicker from '../components/MovePicker';
 import { GameButton } from '../components/Form';
+import Spinner from '../components/Spinner';
 import styled from 'styled-components';
 import Swal from 'sweetalert2';
 import { addPlayToGame } from '../api';
+import History from './History';
 
 const GameContainer = styled.section`
     width: 100%;
@@ -74,7 +76,6 @@ class GameSetup extends Component {
         if (activeTag === 'player1') { 
             nextTag = 'player2';
             options.loading = false;
-            console.log('ACTIVE ------>')
         };
         this.setState({ activeTag: nextTag, activePlayer: this.props[nextTag], ...options }, () => {
             if (this.state.loading) {
@@ -88,7 +89,9 @@ class GameSetup extends Component {
         const { game, updateGame } = this.props;
         try {
             const { data: gameResponse } = await addPlayToGame(game._id, player1Move, player2Move);
-            updateGame(gameResponse);
+            this.setState({ loading: false }, () => {
+                updateGame(gameResponse.game);
+            });
         } catch (error) {
             const { data } = error.response;
             Swal.fire({
@@ -100,7 +103,8 @@ class GameSetup extends Component {
     }
 
     render() {
-        const { round, activeTag, activePlayer } = this.state;
+        const { round, activeTag, activePlayer, loading } = this.state;
+        const buttonCopy = activeTag === 'player2' ? 'PLAY' : 'SET MOVE';
         return (
             <GameContainer>
                 <GamePanel>
@@ -116,11 +120,16 @@ class GameSetup extends Component {
                         />
                     </div>
                     <div className="next-or-play">
-                        <GameButton onClick={this.lockMove}>SET MOVE</GameButton>
+                        <GameButton onClick={this.lockMove}>
+                            {
+                                loading ? (<Spinner width="5rem" />)
+                                : buttonCopy
+                            }
+                        </GameButton>
                     </div>
                 </GamePanel>
                 <CountPanel>
-                    <h5>Count</h5>
+                    <History {...this.props} />
                 </CountPanel>
             </GameContainer>
         );

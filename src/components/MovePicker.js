@@ -6,8 +6,8 @@ import { floatingEffect, Avatar, AvatarPickerContainer } from './AvatarPicker';
 
 const movements = {
     '1': 'paper',
-    '2': 'rock',
-    '3': 'scissors'
+    '2': 'scissors',
+    '3': 'rock'
 };
 
 const Container = styled(AvatarPickerContainer)`

@@ -50,7 +50,6 @@ class App extends Component {
   }
 
   setGame = (player1, player2, game) => {
-    console.log(game);
     this.setState({
       player1,
       player2,
