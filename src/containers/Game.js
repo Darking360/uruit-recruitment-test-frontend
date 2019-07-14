@@ -3,7 +3,7 @@ import MovePicker from '../components/MovePicker';
 import { GameButton } from '../components/Form';
 import Spinner from '../components/Spinner';
 import styled from 'styled-components';
-import Swal from 'sweetalert2';
+import { alertError } from '../utils';
 import { addPlayToGame } from '../api';
 import History from './History';
 
@@ -93,12 +93,12 @@ class GameSetup extends Component {
                 updateGame(gameResponse.game, gameResponse.winner);
             });
         } catch (error) {
-            const { data } = error.response;
-            Swal.fire({
-                type: 'error',
-                title: 'Oops...',
-                text: data.errors[0].msg
-            })
+            if (error.response) {
+                const { data } = error.response;
+                alertError(data.errors[0].msg);
+                return;
+            }
+            alertError('Internal error');
         }
     }
 

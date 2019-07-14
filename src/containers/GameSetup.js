@@ -3,8 +3,8 @@ import { GameFieldSet, GameButton } from '../components/Form';
 import AvatarPicker from '../components/AvatarPicker';
 import styled from 'styled-components';
 import Spinner from '../components/Spinner';
-import Swal from 'sweetalert2';
 import { createUser, createGame } from '../api';
+import { alertError } from '../utils';
 
 const GameSetupContainer = styled.section`
     display: flex;
@@ -13,8 +13,15 @@ const GameSetupContainer = styled.section`
     align-items: center;
     width: 75%;
     margin: 0 auto;
-    h2, h3 {
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    h2 {
         font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.6rem;
         text-align: center;
     }
     div.action-row {
@@ -76,12 +83,12 @@ class GameSetup extends Component {
                 const { data: game } = await createGame(player1Response._id, player2Response._id);
                 setGame(player1Response, player2Response, game);
             } catch (error) {
-                const { data } = error.response;
-                Swal.fire({
-                    type: 'error',
-                    title: 'Oops...',
-                    text: data.errors[0].msg
-                })
+                if (error.response) {
+                    const { data } = error.response;
+                    alertError(data.errors[0].msg);
+                    return;
+                }
+                alertError('Internal error');
             }
         });
     }
@@ -92,6 +99,7 @@ class GameSetup extends Component {
         return (
             <GameSetupContainer>
                 <Spinner width="10%" />
+                <h1>UruIt Game of Drones</h1>
                 <h2>Welcome to the Hill</h2>
                 <h3>Get your name and the hill will provide you an avatar</h3>
                 <SetupRow>

@@ -2,8 +2,77 @@ import React, { Component } from 'react';
 import GameSetup from './containers/GameSetup';
 import Game from './containers/Game';
 import Winner from './containers/Winner';
-// Statistics here please
-import styled from 'styled-components';
+import Statistics from './containers/Statistics';
+import styled, { keyframes } from 'styled-components';
+import { GameButton, floatingEffect } from './components/Form';
+
+const shakeRotateAnimation = keyframes`
+  0% { 
+    margin-left: 0;
+  }
+  10% { 
+    margin-left: -3px;
+    transform: rotate(15deg);
+  }
+  15% { 
+    margin-left: 5px;
+    transform: rotate(10deg);
+  }
+  20% { 
+    margin-left: -8px;
+    transform: rotate(1deg);
+  }
+  25% { 
+    margin-left: 8px;
+    transform: rotate(0deg);
+  }
+  30% { 
+    margin-left: -5px;
+    transform: rotate(-15deg);
+  }
+  40% { 
+    margin-left: 3px;
+    transform: rotate(-10deg);
+  }
+  50% { 
+    margin-left: 0;
+    transform: rotate(0deg);
+  }
+  0% { 
+    margin-left: 0;
+  }
+  60% { 
+    margin-left: -3px;
+  }
+  65% { 
+    margin-left: 5px;
+  }
+  70% { 
+    margin-left: -8px;
+  }
+  75% { 
+    margin-left: 8px;
+  }
+  80% { 
+    margin-left: -5px;
+  }
+  90% { 
+    margin-left: 3px;
+  }
+  100% { 
+    margin-left: 0;
+  }
+`;
+
+const PositionedGameButton = styled(GameButton)`
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  animation: ${shakeRotateAnimation} 3s infinite, ${floatingEffect} 3s infinite;
+  &:hover {
+    animation: ${floatingEffect} 3s infinite;
+  }
+`;
 
 const AppContainer = styled.section`
   background: #fdc830; /* fallback for old browsers */
@@ -24,6 +93,7 @@ const AppOverlay = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(0,0,0,0.78);
+  position: relative;
 `;
 
 const initialState = {
@@ -48,6 +118,8 @@ class App extends Component {
         return <Game {...this.state} updateGame={this.updateGame} />
       case 'winner':
         return <Winner {...this.state} resetGame={this.resetGame} />
+      case 'statistics':
+        return <Statistics lastScreen={this.state.lastScreen} goBackTo={this.goBackTo} />
       default:
         return <GameSetup />;
     }
@@ -70,11 +142,27 @@ class App extends Component {
     this.setState({ ...initialState });
   }
 
+  openStatistics = () => {
+    this.setState({ currentScreen: 'statistics', lastScreen: this.state.currentScreen });
+  }
+
+  goBackTo = (currentScreen) => {
+    this.setState({ currentScreen });
+  }
+
   render() {
+    const { currentScreen } = this.state;
     return (
       <AppContainer className="App">
         <AppOverlay>
           { this.getActiveScreen() }
+          {
+            currentScreen !== 'statistics' && (
+              <PositionedGameButton onClick={this.openStatistics}>
+                Leader Boards
+              </PositionedGameButton>
+            )
+          }
         </AppOverlay>
       </AppContainer>
     );

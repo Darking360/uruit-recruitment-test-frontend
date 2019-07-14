@@ -17,7 +17,7 @@ const HistoryContainer = styled.div`
     justify-content: center;
 `;
 
-const HistoryGrid = styled.section`
+export const HistoryGrid = styled.section`
     height: 80%;
     max-height: 80vh;
     width: 60%;
@@ -45,7 +45,7 @@ const HistoryGrid = styled.section`
     }
 `;
 
-const HistoryItem = styled(RowAnimation)`
+export const HistoryItem = styled(RowAnimation)`
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
