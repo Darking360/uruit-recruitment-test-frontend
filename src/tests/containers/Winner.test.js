@@ -62,7 +62,7 @@ describe("Winner", () => {
   it("render correct winner information", () => {
     const wrapper = mount(<Winner {...initialProps} />);
     expect(wrapper.find('img').prop('src')).toMatch(new RegExp(`${initialProps.player2.avatar}`)); // Correct avatar
-    expect(wrapper.find('h3').text()).toMatch(new RegExp(`${initialProps.player2.username}`));
+    expect(wrapper.find('h3').text()).toMatch(new RegExp(`${initialProps.player2.username}`)); //Correct username
   });
 
   it("calls reset game to return to main screen", () => {

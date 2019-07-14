@@ -151,6 +151,8 @@ class App extends Component {
   }
 
   render() {
+    console.log('Current state ----->')
+    console.log(this.state) 
     const { currentScreen } = this.state;
     return (
       <AppContainer className="App">

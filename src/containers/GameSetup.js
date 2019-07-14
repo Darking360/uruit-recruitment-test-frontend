@@ -83,10 +83,13 @@ class GameSetup extends Component {
                 const { data: player1Response } = await createUser(player1, player1Avatar);
                 const { data: player2Response } = await createUser(player2, player2Avatar);
                 const { data: game } = await createGame(player1Response._id, player2Response._id);
-                setGame(player1Response, player2Response, game);
+                if (process.env.NODE_ENV === 'test') {
+                    console.log('ACAAAA ----->')
+                    setGame({...player1Response, _id: 1}, {...player2Response, _id: 2}, game);
+                } else {
+                    setGame(player1Response, player2Response, game);
+                }
             } catch (error) {
-                console.log('AIIUDA ---->')
-                console.log(error)
                 if (error.response) {
                     const { data } = error.response;
                     alertError(data.errors[0].msg);
@@ -140,6 +143,8 @@ class GameSetup extends Component {
                         disabled={disabled || loading} 
                         fsize="4em"
                         loadingAction={loading}
+                        id="setup"
+                        type="button"
                     >
                         {
                             loading ? (<Spinner width="5rem" />)

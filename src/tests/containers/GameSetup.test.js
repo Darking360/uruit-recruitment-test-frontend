@@ -4,8 +4,8 @@ import { GameFieldSet } from '../../components/Form';
 import moxios from 'moxios';
 import { shallow, mount, render } from "enzyme";
 
-const typeEvent1 = {target: {name: 'player1', value: "Miguel"}};
-const typeEvent2 = {target: {name: 'player2', value: "Juan"}};
+export const typeEvent1 = {target: {name: 'player1', value: "Miguel"}};
+export const typeEvent2 = {target: {name: 'player2', value: "Juan"}};
 
 // Mock for setGame
 

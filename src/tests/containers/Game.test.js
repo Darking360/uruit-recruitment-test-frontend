@@ -46,7 +46,7 @@ describe("Game", () => {
     
     const wrapper = mount(<Game {...initialProps} />);
     const updateWrapper = wrapperSetPropsClosure(wrapper);
-    wrapper.setProps({ updateGame: updateWrapper })
+    wrapper.setProps({ updateGame: updateWrapper });
     moxios.stubRequest(`http://localhost:3000/games/add_play/${initialProps.game._id}`, {
         status: 200,
         response: {

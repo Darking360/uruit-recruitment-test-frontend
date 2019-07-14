@@ -16,3 +16,1043 @@ exports[`App matches snapshot 1`] = `
   </styled.div>
 </styled.section>
 `;
+
+exports[`Game Setup matches snapshot 1`] = `
+<GameSetup>
+  <styled.section>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": true,
+            "lastClassName": "cdqvId",
+            "rules": Array [
+              "
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    div.action-row {
+        margin-top: 1rem;
+        box-sizing: border-box;
+    }
+",
+            ],
+          },
+          "displayName": "styled.section",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "section",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <section
+        className="sc-bZQynM cdqvId"
+      >
+        <Spinner
+          width="10%"
+        >
+          <styled.div
+            width="10%"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-EHOje",
+                    "isStatic": false,
+                    "lastClassName": "bodGRv",
+                    "rules": Array [
+                      "
+    width: ",
+                      [Function],
+                      ";
+    position: relative;
+    margin: 0px auto;
+    div.ad15 {
+        animation-duration: 1.5s;
+    }
+    div.ateiu {
+        animation-timing-function: ease-in-out;
+    }
+    .overwatch-logo {
+        filter:
+            drop-shadow(0 0 120px rgba(255,255,255,0.15))
+            drop-shadow(0 0 16px rgba(255,255,255,0.05));
+            opacity: 0.8;
+        }
+    .circularCW,
+    .circularCCW {
+        height: 100%;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        margin: auto;
+    }
+    .circularCW {
+        animation: ",
+                      Keyframes {
+                        "id": "sc-keyframes-cZxgpV",
+                        "inject": [Function],
+                        "name": "cZxgpV",
+                        "rules": Array [
+                          "@-webkit-keyframes cZxgpV{100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                          "@keyframes cZxgpV{100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                        ],
+                        "toString": [Function],
+                      },
+                      " 2s linear infinite;
+    }
+    .circularCCW {
+        animation: ",
+                      Keyframes {
+                        "id": "sc-keyframes-bWxUsw",
+                        "inject": [Function],
+                        "name": "bWxUsw",
+                        "rules": Array [
+                          "@-webkit-keyframes bWxUsw{100%{-webkit-transform:rotate(-360deg);-ms-transform:rotate(-360deg);transform:rotate(-360deg);}}",
+                          "@keyframes bWxUsw{100%{-webkit-transform:rotate(-360deg);-ms-transform:rotate(-360deg);transform:rotate(-360deg);}}",
+                        ],
+                        "toString": [Function],
+                      },
+                      " 4s linear infinite;
+    }
+    .path,
+    .path2,
+    .path3,
+    .path4,
+    .path5,
+    .path6,
+    .path7,
+    .path8 {
+        stroke-linecap: square;
+        stroke-width: 33;
+        opacity: 0.8;
+    }
+    .path {
+        stroke-dasharray: 1400,2600;
+        stroke-dashoffset: 0;
+        animation: ",
+                      Keyframes {
+                        "id": "sc-keyframes-heArYz",
+                        "inject": [Function],
+                        "name": "heArYz",
+                        "rules": Array [
+                          "@-webkit-keyframes heArYz{0%{stroke-dasharray:2000,2600;stroke-dashoffset:0;}50%{stroke-dasharray:2400,2600;stroke-dashoffset:-500px;}100%{stroke-dasharray:2000,2600;stroke-dashoffset:0;}}",
+                          "@keyframes heArYz{0%{stroke-dasharray:2000,2600;stroke-dashoffset:0;}50%{stroke-dasharray:2400,2600;stroke-dashoffset:-500px;}100%{stroke-dasharray:2000,2600;stroke-dashoffset:0;}}",
+                        ],
+                        "toString": [Function],
+                      },
+                      " 3.7s ease-in-out infinite;
+        opacity: 0.3;
+    }
+    .path2 {
+        stroke-dasharray: 40,2600;
+        stroke-dashoffset: -500px;
+    }
+    .path3 {
+        stroke-dasharray: 200,2600;
+        stroke-dashoffset: -700px;
+    }
+    .path4 {
+        stroke-dasharray: 40,2600;
+        stroke-dashoffset: -2000px;
+        animation: ",
+                      Keyframes {
+                        "id": "sc-keyframes-fGYOMt",
+                        "inject": [Function],
+                        "name": "fGYOMt",
+                        "rules": Array [
+                          "@-webkit-keyframes fGYOMt{0%{stroke-dasharray:100,2600;stroke-dashoffset:-2000px;}50%{stroke-dasharray:500,2600;stroke-dashoffset:-1000px;}100%{stroke-dasharray:100,2600;stroke-dashoffset:-1960px;}}",
+                          "@keyframes fGYOMt{0%{stroke-dasharray:100,2600;stroke-dashoffset:-2000px;}50%{stroke-dasharray:500,2600;stroke-dashoffset:-1000px;}100%{stroke-dasharray:100,2600;stroke-dashoffset:-1960px;}}",
+                        ],
+                        "toString": [Function],
+                      },
+                      " 2.5s ease-in-out infinite;
+    }
+    .path5 {
+        stroke-dasharray: 200,2600;
+        stroke-dashoffset: 0;
+    }
+    .path6 {
+        stroke-dasharray: 300,2600;
+        stroke-dashoffset: -1000px;
+    }
+    .path7 {
+        stroke-dasharray: 40,2600;
+        stroke-dashoffset: -1200px;
+    }
+    .path8 {
+        stroke-dasharray: 100,2600;
+        stroke-dashoffset: -300px;
+    }
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-EHOje",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              width="10%"
+            >
+              <div
+                className="sc-EHOje bodGRv"
+                width="10%"
+              >
+                <svg
+                  className="overwatch-logo"
+                  viewBox="0 0 1000 1000"
+                >
+                  <svg
+                    height="600"
+                    width="600"
+                    x="200"
+                    xmlns="http://www.w3.org/2000/svg"
+                    y="210"
+                  >
+                    <defs />
+                    <path
+                      color="#000"
+                      d="M296.704.004c-66.766.428-132.772 24.23-184.63 66.083l56.662 65.786c47.82-37.74 112.256-53.118 172.018-41.237 32.844 6.318 64.096 20.74 90.464 41.237l56.66-65.786C434.242 22.804 365.77-1.03 296.705.004z"
+                      fill="#fa9c1e"
+                      overflow="visible"
+                    />
+                    <path
+                      color="#000"
+                      d="M93.628 82.253C33.924 138.343-1.082 219.877.026 302.123c.035 85.37 38.978 169.23 103.652 224.696 59.78 52.283 141.085 78.917 220.46 72.18 86.01-6.405 167.65-52.345 218.118-122.143 49.125-66.33 68.37-153.797 52.064-234.91-11.987-62.09-44.54-119.634-90.837-162.405l-56.662 65.786c45.657 43.034 70.586 106.557 65.886 169.224-2.056 31.05-11.074 61.69-26.314 88.96L370.92 291.974 312.66 166.39l-.088 190.18 116.695 112.926c-52.002 40.402-123.353 53.802-186.578 35.894-25.744-7.18-50.122-19.23-71.31-35.398L288.87 356.57c-.206-61.831.717-128.578 0-190.383L230.52 291.974 114.058 404.437c-35.53-62.024-36.38-142.21-2.182-204.927 10.69-20.092 24.84-38.428 41.257-54.182L96.47 79.542l-2.842 2.71z"
+                      fill="#fff"
+                      overflow="visible"
+                    />
+                  </svg>
+                </svg>
+                <svg
+                  className="circularCW"
+                  viewBox="0 0 1000 1000"
+                >
+                  <circle
+                    className="path"
+                    cx="500"
+                    cy="500"
+                    fill="none"
+                    r="355"
+                    stroke="#fa9c1e"
+                  />
+                </svg>
+                <svg
+                  className="circularCCW ad15"
+                  viewBox="0 0 1000 1000"
+                >
+                  <circle
+                    className="path2"
+                    cx="500"
+                    cy="500"
+                    fill="none"
+                    r="355"
+                    stroke="#fa9c1e"
+                  />
+                </svg>
+                <svg
+                  className="circularCW"
+                  viewBox="0 0 1000 1000"
+                >
+                  <circle
+                    className="path3"
+                    cx="500"
+                    cy="500"
+                    fill="none"
+                    r="355"
+                    stroke="#fa9c1e"
+                  />
+                </svg>
+                <svg
+                  className="circularCW"
+                  viewBox="0 0 1000 1000"
+                >
+                  <circle
+                    className="path4"
+                    cx="500"
+                    cy="500"
+                    fill="none"
+                    r="355"
+                    stroke="#fa9c1e"
+                  />
+                </svg>
+                <svg
+                  className="circularCW"
+                  viewBox="0 0 1000 1000"
+                >
+                  <circle
+                    className="path5"
+                    cx="500"
+                    cy="500"
+                    fill="none"
+                    r="420"
+                    stroke="#fff"
+                  />
+                </svg>
+                <svg
+                  className="circularCW"
+                  viewBox="0 0 1000 1000"
+                >
+                  <circle
+                    className="path6"
+                    cx="500"
+                    cy="500"
+                    fill="none"
+                    r="420"
+                    stroke="#fff"
+                  />
+                </svg>
+                <svg
+                  className="circularCCW"
+                  viewBox="0 0 1000 1000"
+                >
+                  <circle
+                    className="path7"
+                    cx="500"
+                    cy="500"
+                    fill="none"
+                    r="420"
+                    stroke="#fff"
+                  />
+                </svg>
+                <svg
+                  className="circularCCW ateiu"
+                  viewBox="0 0 1000 1000"
+                >
+                  <circle
+                    className="path8"
+                    cx="500"
+                    cy="500"
+                    fill="none"
+                    r="420"
+                    stroke="#fff"
+                  />
+                </svg>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </Spinner>
+        <h1>
+          UruIt Game of Drones
+        </h1>
+        <h2>
+          Welcome to the Hill
+        </h2>
+        <h3>
+          Get your name and the hill will provide you an avatar
+        </h3>
+        <styled.form
+          onSubmit={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htoDjs",
+                  "isStatic": true,
+                  "lastClassName": "fMEHki",
+                  "rules": Array [
+                    "
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+",
+                  ],
+                },
+                "displayName": "styled.form",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htoDjs",
+                "target": "form",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onSubmit={[Function]}
+          >
+            <form
+              className="sc-htoDjs fMEHki"
+              onSubmit={[Function]}
+            >
+              <styled.div>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gzVnrw",
+                        "isStatic": true,
+                        "lastClassName": "gZzZIM",
+                        "rules": Array [
+                          "
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .fieldset {
+        margin-top: 1rem;   
+    }
+    margin-bottom: 1rem;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-gzVnrw",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="sc-gzVnrw gZzZIM"
+                  >
+                    <AvatarPicker
+                      name="player1Avatar"
+                      onChange={[Function]}
+                      value="OW-icon_bastion"
+                    >
+                      <styled.div>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-ifAKCX",
+                                "isStatic": true,
+                                "lastClassName": "bpOaAN",
+                                "rules": Array [
+                                  "
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+",
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-ifAKCX",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={[Function]}
+                        >
+                          <div
+                            className="sc-ifAKCX bpOaAN"
+                          >
+                            <styled.img
+                              alt="Avatar preview"
+                              onClick={[Function]}
+                              src="../images/OW-icon_bastion.svg"
+                            >
+                              <StyledComponent
+                                alt="Avatar preview"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bxivhb",
+                                      "isStatic": false,
+                                      "lastClassName": "cENUZK",
+                                      "rules": Array [
+                                        "
+    width: 6rem;
+    height: 6rem;
+    object-fit: fill;
+    border: 3px solid rgba(255,255,255,0.75);
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    animation: ",
+                                        Keyframes {
+                                          "id": "sc-keyframes-jTmlpk",
+                                          "inject": [Function],
+                                          "name": "jTmlpk",
+                                          "rules": Array [
+                                            "@-webkit-keyframes jTmlpk{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 14px 28px rgba(255,255,255,0.25),0 10px 10px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+                                            "@keyframes jTmlpk{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 14px 28px rgba(255,255,255,0.25),0 10px 10px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+                                          ],
+                                          "toString": [Function],
+                                        },
+                                        " 3s infinite;
+    transition: all 2s ease-in-out;
+    position: relative;
+    ",
+                                        [Function],
+                                        "
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.img",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bxivhb",
+                                    "target": "img",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onClick={[Function]}
+                                src="../images/OW-icon_bastion.svg"
+                              >
+                                <img
+                                  alt="Avatar preview"
+                                  className="sc-bxivhb cENUZK"
+                                  onClick={[Function]}
+                                  src="../images/OW-icon_bastion.svg"
+                                />
+                              </StyledComponent>
+                            </styled.img>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                    </AvatarPicker>
+                    <GameFieldSet
+                      label="Player 1"
+                      name="player1"
+                      onChange={[Function]}
+                      value=""
+                    >
+                      <styled.div
+                        className="fieldset"
+                      >
+                        <StyledComponent
+                          className="fieldset"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": true,
+                                "lastClassName": "kmbuTP",
+                                "rules": Array [
+                                  "
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    label {
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+",
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="fieldset sc-htpNat kmbuTP"
+                          >
+                            <label
+                              htmlFor="player1"
+                            >
+                              Player 1
+                            </label>
+                            <styled.input
+                              id="player1"
+                              name="player1"
+                              onChange={[Function]}
+                              value=""
+                            >
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": true,
+                                      "lastClassName": "jWXqGE",
+                                      "rules": Array [
+                                        "
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.55);
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Bigno';
+    box-shadow: 1px 1px white;
+    transition: all .5s ease-in-out;
+    width: 15em;
+    max-width: auto;
+    &:active, &:focus {
+        outline: none;
+        border: 2px solid yellow;
+        width: 65%;
+        max-width: 65%;
+    }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.input",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "input",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                id="player1"
+                                name="player1"
+                                onChange={[Function]}
+                                value=""
+                              >
+                                <input
+                                  className="sc-bwzfXH jWXqGE"
+                                  id="player1"
+                                  name="player1"
+                                  onChange={[Function]}
+                                  value=""
+                                />
+                              </StyledComponent>
+                            </styled.input>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                    </GameFieldSet>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+              <styled.div>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gzVnrw",
+                        "isStatic": true,
+                        "lastClassName": "gZzZIM",
+                        "rules": Array [
+                          "
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .fieldset {
+        margin-top: 1rem;   
+    }
+    margin-bottom: 1rem;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-gzVnrw",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="sc-gzVnrw gZzZIM"
+                  >
+                    <AvatarPicker
+                      name="player2Avatar"
+                      onChange={[Function]}
+                      value="OW-icon_mercy"
+                    >
+                      <styled.div>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-ifAKCX",
+                                "isStatic": true,
+                                "lastClassName": "bpOaAN",
+                                "rules": Array [
+                                  "
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+",
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-ifAKCX",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={[Function]}
+                        >
+                          <div
+                            className="sc-ifAKCX bpOaAN"
+                          >
+                            <styled.img
+                              alt="Avatar preview"
+                              onClick={[Function]}
+                              src="../images/OW-icon_mercy.svg"
+                            >
+                              <StyledComponent
+                                alt="Avatar preview"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bxivhb",
+                                      "isStatic": false,
+                                      "lastClassName": "cENUZK",
+                                      "rules": Array [
+                                        "
+    width: 6rem;
+    height: 6rem;
+    object-fit: fill;
+    border: 3px solid rgba(255,255,255,0.75);
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    animation: ",
+                                        Keyframes {
+                                          "id": "sc-keyframes-jTmlpk",
+                                          "inject": [Function],
+                                          "name": "jTmlpk",
+                                          "rules": Array [
+                                            "@-webkit-keyframes jTmlpk{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 14px 28px rgba(255,255,255,0.25),0 10px 10px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+                                            "@keyframes jTmlpk{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 14px 28px rgba(255,255,255,0.25),0 10px 10px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+                                          ],
+                                          "toString": [Function],
+                                        },
+                                        " 3s infinite;
+    transition: all 2s ease-in-out;
+    position: relative;
+    ",
+                                        [Function],
+                                        "
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.img",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bxivhb",
+                                    "target": "img",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onClick={[Function]}
+                                src="../images/OW-icon_mercy.svg"
+                              >
+                                <img
+                                  alt="Avatar preview"
+                                  className="sc-bxivhb cENUZK"
+                                  onClick={[Function]}
+                                  src="../images/OW-icon_mercy.svg"
+                                />
+                              </StyledComponent>
+                            </styled.img>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                    </AvatarPicker>
+                    <GameFieldSet
+                      label="Player 2"
+                      name="player2"
+                      onChange={[Function]}
+                      value=""
+                    >
+                      <styled.div
+                        className="fieldset"
+                      >
+                        <StyledComponent
+                          className="fieldset"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": true,
+                                "lastClassName": "kmbuTP",
+                                "rules": Array [
+                                  "
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    label {
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+",
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="fieldset sc-htpNat kmbuTP"
+                          >
+                            <label
+                              htmlFor="player2"
+                            >
+                              Player 2
+                            </label>
+                            <styled.input
+                              id="player2"
+                              name="player2"
+                              onChange={[Function]}
+                              value=""
+                            >
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": true,
+                                      "lastClassName": "jWXqGE",
+                                      "rules": Array [
+                                        "
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.55);
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Bigno';
+    box-shadow: 1px 1px white;
+    transition: all .5s ease-in-out;
+    width: 15em;
+    max-width: auto;
+    &:active, &:focus {
+        outline: none;
+        border: 2px solid yellow;
+        width: 65%;
+        max-width: 65%;
+    }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.input",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "input",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                id="player2"
+                                name="player2"
+                                onChange={[Function]}
+                                value=""
+                              >
+                                <input
+                                  className="sc-bwzfXH jWXqGE"
+                                  id="player2"
+                                  name="player2"
+                                  onChange={[Function]}
+                                  value=""
+                                />
+                              </StyledComponent>
+                            </styled.input>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                    </GameFieldSet>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </form>
+          </StyledComponent>
+        </styled.form>
+        <div
+          className="action-row"
+        >
+          <styled.button
+            disabled={true}
+            fsize="4em"
+            id="setup"
+            loadingAction={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <StyledComponent
+              disabled={true}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "gwEiTK",
+                    "rules": Array [
+                      "
+    background-color: #d38627;
+    color: white;
+    padding: 1rem 2rem;
+    padding-right: 3rem;
+    font-family: 'Bigno';
+    border: none;
+    font-weight: bold;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-size: ",
+                      [Function],
+                      ";
+    &:focus, &:active {
+        outline: none;
+    }
+    animation: ",
+                      Keyframes {
+                        "id": "sc-keyframes-cyknLF",
+                        "inject": [Function],
+                        "name": "cyknLF",
+                        "rules": Array [
+                          "@-webkit-keyframes cyknLF{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 19px 28px rgba(255,255,255,0.30),0 15px 12px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+                          "@keyframes cyknLF{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 19px 28px rgba(255,255,255,0.30),0 15px 12px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+                        ],
+                        "toString": [Function],
+                      },
+                      " 3s infinite;
+    &:hover {
+        padding: 1rem 3rem;
+        padding-right: 4rem;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+    ",
+                      [Function],
+                      "
+    ",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "displayName": "styled.button",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "button",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              fsize="4em"
+              id="setup"
+              loadingAction={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <button
+                className="sc-bdVaJa gwEiTK"
+                disabled={true}
+                id="setup"
+                onClick={[Function]}
+                type="button"
+              >
+                Play
+              </button>
+            </StyledComponent>
+          </styled.button>
+        </div>
+      </section>
+    </StyledComponent>
+  </styled.section>
+</GameSetup>
+`;
