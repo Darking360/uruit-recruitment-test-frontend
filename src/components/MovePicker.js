@@ -86,4 +86,9 @@ MovePicker.propTypes = {
     name: PropTypes.string.isRequired
 };
 
+MovePicker.defaultProps = {
+    value: 1,
+    name: 'player1'
+};
+
 export default MovePicker;

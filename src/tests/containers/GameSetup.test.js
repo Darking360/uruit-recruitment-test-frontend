@@ -9,7 +9,7 @@ const typeEvent2 = {target: {name: 'player2', value: "Juan"}};
 
 // Mock for setGame
 
-describe("Game Fieldset", () => {
+describe("Game Setup", () => {
   it("renders without crashing", () => {
     mount(<GameSetup />);
   });
@@ -19,7 +19,7 @@ describe("Game Fieldset", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe("change values", () => {
+  describe("changes values", () => {
     const newGameMock = jest.fn();
     let wrapper = mount(<GameSetup setGame={newGameMock} />);
     beforeEach(() => {

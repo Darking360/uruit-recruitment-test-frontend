@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import posed, { PoseGroup } from 'react-pose';
 
-const RowAnimation = posed.div({
+const RowAnimation = posed.li({
     enter: {
       opacity: 1,
       delay: 300
@@ -17,7 +17,7 @@ const HistoryContainer = styled.div`
     justify-content: center;
 `;
 
-export const HistoryGrid = styled.section`
+export const HistoryGrid = styled.ul`
     height: 80%;
     max-height: 80vh;
     width: 60%;

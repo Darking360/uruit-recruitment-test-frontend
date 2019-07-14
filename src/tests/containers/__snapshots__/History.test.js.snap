@@ -1,0 +1,614 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`History matches snapshot 1`] = `
+<History
+  game={
+    Object {
+      "_id": 1,
+      "player1": 1,
+      "player2": 2,
+      "plays": Array [
+        Object {
+          "player1Play": 1,
+          "player2Play": 2,
+          "winner": "player2",
+        },
+        Object {
+          "player1Play": 1,
+          "player2Play": 2,
+          "winner": "player1",
+        },
+        Object {
+          "player1Play": 1,
+          "player2Play": 2,
+          "winner": "player2",
+        },
+        Object {
+          "player1Play": 1,
+          "player2Play": 1,
+          "winner": null,
+        },
+        Object {
+          "player1Play": 1,
+          "player2Play": 2,
+          "winner": "player2",
+        },
+      ],
+    }
+  }
+  player1={
+    Object {
+      "_id": 1,
+      "avatar": "some",
+      "usernames": "Miguel",
+    }
+  }
+  player2={
+    Object {
+      "_id": 2,
+      "avatar": "some",
+      "usernames": "Juan",
+    }
+  }
+>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "fjjnFI",
+            "rules": Array [
+              "
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="sc-bdVaJa fjjnFI"
+      >
+        <h2>
+          Score
+        </h2>
+        <styled.ul>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": true,
+                  "lastClassName": "dxSAwl",
+                  "rules": Array [
+                    "
+    height: 80%;
+    max-height: 80vh;
+    width: 60%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    &::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: rgba(0,0,0,.75);
+    }
+
+    &::-webkit-scrollbar
+    {
+        width: 8px;
+        background-color: rgba(0,0,0,.75);
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #d38627;
+    }
+",
+                  ],
+                },
+                "displayName": "styled.ul",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "ul",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <ul
+              className="sc-bwzfXH dxSAwl"
+            >
+              <Styled(Component)>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htpNat",
+                        "isStatic": true,
+                        "lastClassName": "hwMSto",
+                        "rules": Array [
+                          "
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid white;
+    span {
+        font-size: 1.6em;
+        padding: .5rem;
+    }
+",
+                        ],
+                      },
+                      "displayName": "Styled(Component)",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htpNat",
+                      "target": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <ForwardRef
+                    className="sc-htpNat hwMSto"
+                  >
+                    <PoseElement
+                      className="sc-htpNat hwMSto"
+                      elementType="li"
+                      innerRef={null}
+                      poseConfig={
+                        Object {
+                          "enter": Object {
+                            "delay": 300,
+                            "opacity": 1,
+                          },
+                        }
+                      }
+                    >
+                      <li
+                        className="sc-htpNat hwMSto"
+                      >
+                        <span>
+                          Round
+                        </span>
+                        <span>
+                          Winner
+                        </span>
+                      </li>
+                    </PoseElement>
+                  </ForwardRef>
+                </StyledComponent>
+              </Styled(Component)>
+              <PoseGroup
+                flipMove={true}
+              >
+                <Transition
+                  enterAfterExit={false}
+                  enterPose="enter"
+                  exitPose="exit"
+                  flipMove={true}
+                  preEnterPose="exit"
+                >
+                  <Styled(Component)
+                    _pose="enter"
+                    key="0"
+                  >
+                    <StyledComponent
+                      _pose="enter"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-htpNat",
+                            "isStatic": true,
+                            "lastClassName": "hwMSto",
+                            "rules": Array [
+                              "
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid white;
+    span {
+        font-size: 1.6em;
+        padding: .5rem;
+    }
+",
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-htpNat",
+                          "target": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          },
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <ForwardRef
+                        _pose="enter"
+                        className="sc-htpNat hwMSto"
+                      >
+                        <PoseElement
+                          _pose="enter"
+                          className="sc-htpNat hwMSto"
+                          elementType="li"
+                          innerRef={null}
+                          poseConfig={
+                            Object {
+                              "enter": Object {
+                                "delay": 300,
+                                "opacity": 1,
+                              },
+                            }
+                          }
+                        >
+                          <li
+                            className="sc-htpNat hwMSto"
+                          >
+                            <span>
+                              1
+                            </span>
+                            <span />
+                          </li>
+                        </PoseElement>
+                      </ForwardRef>
+                    </StyledComponent>
+                  </Styled(Component)>
+                  <Styled(Component)
+                    _pose="enter"
+                    key="1"
+                  >
+                    <StyledComponent
+                      _pose="enter"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-htpNat",
+                            "isStatic": true,
+                            "lastClassName": "hwMSto",
+                            "rules": Array [
+                              "
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid white;
+    span {
+        font-size: 1.6em;
+        padding: .5rem;
+    }
+",
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-htpNat",
+                          "target": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          },
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <ForwardRef
+                        _pose="enter"
+                        className="sc-htpNat hwMSto"
+                      >
+                        <PoseElement
+                          _pose="enter"
+                          className="sc-htpNat hwMSto"
+                          elementType="li"
+                          innerRef={null}
+                          poseConfig={
+                            Object {
+                              "enter": Object {
+                                "delay": 300,
+                                "opacity": 1,
+                              },
+                            }
+                          }
+                        >
+                          <li
+                            className="sc-htpNat hwMSto"
+                          >
+                            <span>
+                              2
+                            </span>
+                            <span />
+                          </li>
+                        </PoseElement>
+                      </ForwardRef>
+                    </StyledComponent>
+                  </Styled(Component)>
+                  <Styled(Component)
+                    _pose="enter"
+                    key="2"
+                  >
+                    <StyledComponent
+                      _pose="enter"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-htpNat",
+                            "isStatic": true,
+                            "lastClassName": "hwMSto",
+                            "rules": Array [
+                              "
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid white;
+    span {
+        font-size: 1.6em;
+        padding: .5rem;
+    }
+",
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-htpNat",
+                          "target": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          },
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <ForwardRef
+                        _pose="enter"
+                        className="sc-htpNat hwMSto"
+                      >
+                        <PoseElement
+                          _pose="enter"
+                          className="sc-htpNat hwMSto"
+                          elementType="li"
+                          innerRef={null}
+                          poseConfig={
+                            Object {
+                              "enter": Object {
+                                "delay": 300,
+                                "opacity": 1,
+                              },
+                            }
+                          }
+                        >
+                          <li
+                            className="sc-htpNat hwMSto"
+                          >
+                            <span>
+                              3
+                            </span>
+                            <span />
+                          </li>
+                        </PoseElement>
+                      </ForwardRef>
+                    </StyledComponent>
+                  </Styled(Component)>
+                  <Styled(Component)
+                    _pose="enter"
+                    key="3"
+                  >
+                    <StyledComponent
+                      _pose="enter"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-htpNat",
+                            "isStatic": true,
+                            "lastClassName": "hwMSto",
+                            "rules": Array [
+                              "
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid white;
+    span {
+        font-size: 1.6em;
+        padding: .5rem;
+    }
+",
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-htpNat",
+                          "target": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          },
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <ForwardRef
+                        _pose="enter"
+                        className="sc-htpNat hwMSto"
+                      >
+                        <PoseElement
+                          _pose="enter"
+                          className="sc-htpNat hwMSto"
+                          elementType="li"
+                          innerRef={null}
+                          poseConfig={
+                            Object {
+                              "enter": Object {
+                                "delay": 300,
+                                "opacity": 1,
+                              },
+                            }
+                          }
+                        >
+                          <li
+                            className="sc-htpNat hwMSto"
+                          >
+                            <span>
+                              4
+                            </span>
+                            <span>
+                              Tie
+                            </span>
+                          </li>
+                        </PoseElement>
+                      </ForwardRef>
+                    </StyledComponent>
+                  </Styled(Component)>
+                  <Styled(Component)
+                    _pose="enter"
+                    key="4"
+                  >
+                    <StyledComponent
+                      _pose="enter"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-htpNat",
+                            "isStatic": true,
+                            "lastClassName": "hwMSto",
+                            "rules": Array [
+                              "
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid white;
+    span {
+        font-size: 1.6em;
+        padding: .5rem;
+    }
+",
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-htpNat",
+                          "target": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          },
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <ForwardRef
+                        _pose="enter"
+                        className="sc-htpNat hwMSto"
+                      >
+                        <PoseElement
+                          _pose="enter"
+                          className="sc-htpNat hwMSto"
+                          elementType="li"
+                          innerRef={null}
+                          poseConfig={
+                            Object {
+                              "enter": Object {
+                                "delay": 300,
+                                "opacity": 1,
+                              },
+                            }
+                          }
+                        >
+                          <li
+                            className="sc-htpNat hwMSto"
+                          >
+                            <span>
+                              5
+                            </span>
+                            <span />
+                          </li>
+                        </PoseElement>
+                      </ForwardRef>
+                    </StyledComponent>
+                  </Styled(Component)>
+                </Transition>
+              </PoseGroup>
+            </ul>
+          </StyledComponent>
+        </styled.ul>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</History>
+`;

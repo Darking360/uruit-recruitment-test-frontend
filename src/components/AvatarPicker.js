@@ -124,4 +124,9 @@ AvatarPicker.propTypes = {
     name: PropTypes.string.isRequired
 };
 
+AvatarPicker.defaultProps = {
+    name: 'player1',
+    onChange: () => {}
+};
+
 export default AvatarPicker;
