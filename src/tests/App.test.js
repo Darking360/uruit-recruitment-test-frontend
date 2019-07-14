@@ -79,27 +79,7 @@ describe("App", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("completes a whole game 1 round winner immediately", async (done) => {
-    const wrapper = mount(<App />);
-    // Type and setup Game
-    wrapper.find('input[name="player1"]').simulate('change', typeEvent1)
-    wrapper.find('input[name="player2"]').simulate('change', typeEvent2)
-    expect(wrapper.find('input[name="player1"]').props().value).toBe(typeEvent1.target.value);
-    expect(wrapper.find('input[name="player2"]').props().value).toBe(typeEvent2.target.value);
-    // Click to setup and go to Game
-    wrapper.find('button#setup').simulate('click');
-    wrapper.update()
-    await(new Promise((resolve) => setTimeout(() => resolve(), 0)));
-    // Waiting event loop to resolve and catch moxios requests correctly
-    // Game set, now play 2 times to trigger and set winner
-    console.log(wrapper.find('button').length);
-    wrapper.find('button#play').simulate('click');
-    wrapper.find('button#play').simulate('click');
-    wrapper.update();
-    await(new Promise((resolve) => setTimeout(() => resolve(), 0)));
-    // Now there should be a winner
-    expect(wrapper.find('img').prop('src')).toMatch(new RegExp(`${initialProps.player2.avatar}`)); // Correct avatar
-    expect(wrapper.find('h3').text()).toMatch(new RegExp(`${initialProps.player2.username}`)); // Correct username
-    done();
+  it("renders complete app with render", () => {
+    render(<App />);
   });
 });

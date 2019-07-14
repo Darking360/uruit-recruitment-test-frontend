@@ -67,7 +67,7 @@ describe("History", () => {
     const wrapper = mount(<History {...initialProps} />);
     const spans = wrapper.find(History).find('li').find('span').getElements();
     expect(spans[3].props.children).toBe(initialProps[initialProps.game.plays[0].winner].userName); // First row
-    expect(spans[spans.length - 1].props.children).toBe(initialProps[initialProps.game.plays[initialProps.game.plays.length - 1].winner].userName); // First row
+    expect(spans[spans.length - 1].props.children).toBe(initialProps[initialProps.game.plays[initialProps.game.plays.length - 1].winner].userName); // Last row
   });
 
 });

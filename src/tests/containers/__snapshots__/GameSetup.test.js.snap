@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Game Fieldset matches snapshot 1`] = `
+exports[`Game Setup matches snapshot 1`] = `
 <GameSetup>
   <styled.section>
     <StyledComponent
@@ -942,8 +942,10 @@ exports[`Game Fieldset matches snapshot 1`] = `
           <styled.button
             disabled={true}
             fsize="4em"
+            id="setup"
             loadingAction={false}
             onClick={[Function]}
+            type="button"
           >
             <StyledComponent
               disabled={true}
@@ -1015,13 +1017,17 @@ exports[`Game Fieldset matches snapshot 1`] = `
               }
               forwardedRef={null}
               fsize="4em"
+              id="setup"
               loadingAction={false}
               onClick={[Function]}
+              type="button"
             >
               <button
                 className="sc-bdVaJa gwEiTK"
                 disabled={true}
+                id="setup"
                 onClick={[Function]}
+                type="button"
               >
                 Play
               </button>

@@ -83,12 +83,7 @@ class GameSetup extends Component {
                 const { data: player1Response } = await createUser(player1, player1Avatar);
                 const { data: player2Response } = await createUser(player2, player2Avatar);
                 const { data: game } = await createGame(player1Response._id, player2Response._id);
-                if (process.env.NODE_ENV === 'test') {
-                    console.log('ACAAAA ----->')
-                    setGame({...player1Response, _id: 1}, {...player2Response, _id: 2}, game);
-                } else {
-                    setGame(player1Response, player2Response, game);
-                }
+                setGame(player1Response, player2Response, game);
             } catch (error) {
                 if (error.response) {
                     const { data } = error.response;
