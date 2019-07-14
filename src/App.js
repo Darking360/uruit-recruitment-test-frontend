@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Spinner from './components/Spinner';
 import GameSetup from './containers/GameSetup';
 import Game from './containers/Game';
+import Winner from './containers/Winner';
+// Statistics here please
 import styled from 'styled-components';
 
 const AppContainer = styled.section`
@@ -25,16 +26,17 @@ const AppOverlay = styled.div`
   background-color: rgba(0,0,0,0.78);
 `;
 
-// Add state to manage current screen
+const initialState = {
+  currentScreen: 'setup',
+  game: null,
+  player1: null,
+  player2: null
+};
 
 class App extends Component {
 
   state = {
-    currentScreen: 'setup',
-    game: null,
-    player1: null,
-    player2: null,
-    winner: null
+    ...initialState
   };
 
   getActiveScreen = () => {
@@ -44,6 +46,8 @@ class App extends Component {
         return <GameSetup setGame={this.setGame} />;
       case 'game':
         return <Game {...this.state} updateGame={this.updateGame} />
+      case 'winner':
+        return <Winner {...this.state} resetGame={this.resetGame} />
       default:
         return <GameSetup />;
     }
@@ -58,8 +62,12 @@ class App extends Component {
     });
   }
 
-  updateGame = (game) => {
-    this.setState({ game });
+  updateGame = (game, win = false) => {
+    this.setState({ game, currentScreen: win ? 'winner' : 'game' });
+  }
+
+  resetGame = () => {
+    this.setState({ ...initialState });
   }
 
   render() {

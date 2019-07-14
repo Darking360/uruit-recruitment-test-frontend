@@ -90,7 +90,7 @@ class GameSetup extends Component {
         try {
             const { data: gameResponse } = await addPlayToGame(game._id, player1Move, player2Move);
             this.setState({ loading: false }, () => {
-                updateGame(gameResponse.game);
+                updateGame(gameResponse.game, gameResponse.winner);
             });
         } catch (error) {
             const { data } = error.response;

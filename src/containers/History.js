@@ -16,6 +16,25 @@ const HistoryGrid = styled.section`
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    &::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: rgba(0,0,0,.75);
+    }
+
+    &::-webkit-scrollbar
+    {
+        width: 8px;
+        background-color: rgba(0,0,0,.75);
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #d38627;
+    }
 `;
 
 const HistoryItem = styled.div`

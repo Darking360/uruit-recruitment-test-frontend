@@ -53,6 +53,9 @@ export const Avatar = styled.img`
     animation: ${floatingEffect} 3s infinite;
     transition: all 2s ease-in-out;
     position: relative;
+    ${({ present }) => present && `
+        cursor: inherit;
+    `}
 `;
 
 export const AvatarPickerContainer = styled.div`
@@ -89,7 +92,7 @@ class AvatarPicker extends Component {
     handleChange = () => {
         const { onChange, name } = this.props;
         this.playBurst();
-        const nextAvatar = Math.floor(Math.random() * 21) + 1;// random number to get next avatar between 1 and 21
+        const nextAvatar = Math.floor(Math.random() * 21) + 1;
         onChange(name, avatars[nextAvatar-1]);
     }
 
@@ -97,11 +100,11 @@ class AvatarPicker extends Component {
         const { value } = this.props;
         return (
             <AvatarPickerContainer ref={avatar => this.avatar = avatar}>
-                <Avatar 
-                    
+                <Avatar
                     src={`../images/${value}.svg`}
                     alt='Avatar preview'
-                    onClick={this.handleChange}
+                    onClick={!this.props.present ? this.handleChange : null}
+                    present={this.props.present}
                 />
             </AvatarPickerContainer>
         );
