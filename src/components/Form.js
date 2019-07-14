@@ -15,10 +15,6 @@ export const floatingEffect = keyframes`
     }
 `;
 
-const shadowField = keyframes`
-
-`;
-
 export const GameButton = styled.button`
     background-color: #d38627;
     color: white;
@@ -82,7 +78,7 @@ export const GameField = styled.input`
     }
 `;
 
-const FieldSet = styled.div`
+export const FieldSet = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
@@ -96,12 +92,12 @@ const FieldSet = styled.div`
 export const GameFieldSet = ({ value, onChange, label, name }) => {
     return (
         <FieldSet className="fieldset">
-            <label htmlFor="player1">{label}</label>
+            <label htmlFor={name}>{label}</label>
             <GameField
                 value={value}
                 onChange={onChange}
                 name={name}
-                id="player1"
+                id={name}
             />
         </FieldSet>
     );

@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FieldSet matches snapshot 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-htpNat",
+        "isStatic": true,
+        "lastClassName": "kmbuTP",
+        "rules": Array [
+          "
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    label {
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-htpNat",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  Test
+</StyledComponent>
+`;
+
+exports[`Game Button matches snapshot 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+    background-color: #d38627;
+    color: white;
+    padding: 1rem 2rem;
+    padding-right: 3rem;
+    font-family: 'Bigno';
+    border: none;
+    font-weight: bold;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-size: ",
+          [Function],
+          ";
+    &:focus, &:active {
+        outline: none;
+    }
+    animation: ",
+          Keyframes {
+            "id": "sc-keyframes-cyknLF",
+            "inject": [Function],
+            "name": "cyknLF",
+            "rules": Array [
+              "@-webkit-keyframes cyknLF{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 19px 28px rgba(255,255,255,0.30),0 15px 12px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+              "@keyframes cyknLF{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 19px 28px rgba(255,255,255,0.30),0 15px 12px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+            ],
+            "toString": [Function],
+          },
+          " 3s infinite;
+    &:hover {
+        padding: 1rem 3rem;
+        padding-right: 4rem;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+    ",
+          [Function],
+          "
+    ",
+          [Function],
+          "
+",
+        ],
+      },
+      "displayName": "styled.button",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "button",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  Test
+</StyledComponent>
+`;
+
+exports[`Game Field matches snapshot 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bwzfXH",
+        "isStatic": true,
+        "lastClassName": "jWXqGE",
+        "rules": Array [
+          "
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.55);
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Bigno';
+    box-shadow: 1px 1px white;
+    transition: all .5s ease-in-out;
+    width: 15em;
+    max-width: auto;
+    &:active, &:focus {
+        outline: none;
+        border: 2px solid yellow;
+        width: 65%;
+        max-width: 65%;
+    }
+",
+        ],
+      },
+      "displayName": "styled.input",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bwzfXH",
+      "target": "input",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  name="name"
+  value="test"
+/>
+`;
+
+exports[`Game Fieldset matches snapshot 1`] = `
+<styled.div
+  className="fieldset"
+>
+  <label
+    htmlFor="player1"
+  >
+    Label
+  </label>
+  <styled.input
+    id="player1"
+    name="player1"
+    onChange={[MockFunction]}
+    value="Cool name"
+  />
+</styled.div>
+`;
