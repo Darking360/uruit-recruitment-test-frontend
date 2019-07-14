@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { GameFieldSet, GameButton } from '../components/Form';
 import AvatarPicker from '../components/AvatarPicker';
 import styled from 'styled-components';
+import { createUser, createGame } from '../api';
 
 const GameSetupContainer = styled.section`
     display: flex;
@@ -16,6 +17,7 @@ const GameSetupContainer = styled.section`
     }
     div.action-row {
         margin-top: 1rem;
+        box-sizing: border-box;
     }
 `;
 
@@ -56,7 +58,18 @@ class GameSetup extends Component {
         this.setState({ [name]: avatar });
     }
 
+    isDisabled = () => {
+        const { player1, player2 } = this.state;
+        return !(player1.length && player2.length);
+    }
+
+    handleGameCreation = () => {
+        const { player1, player2 } = this.state;
+        
+    }
+
     render() {
+        const disabled = this.isDisabled()
         return (
             <GameSetupContainer>
                 <h2>Welcome to the Hill</h2>
@@ -83,14 +96,14 @@ class GameSetup extends Component {
                         />
                         <GameFieldSet  
                             label="Player 2"
-                            value={this.state.player1}
+                            value={this.state.player2}
                             onChange={this.onChange}
                             name={'player2'}
                         />
                     </PlayerOptions>
                 </SetupRow>
                 <div className="action-row">
-                    <GameButton fsize="4em">Play</GameButton>
+                    <GameButton onClick={this.handleGameCreation} disabled={disabled} fsize="4em">Play</GameButton>
                 </div>
             </GameSetupContainer>
         );

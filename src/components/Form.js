@@ -1,19 +1,53 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
+export const floatingEffect = keyframes`
+    0% {
+        box-shadow: 0 2px 8px rgba(255,255,255,0.30), 0 3px 6px rgba(255,255,255,0.22);
+    }
+
+    50% {
+        box-shadow: 0 19px 28px rgba(255,255,255,0.30), 0 15px 12px rgba(255,255,255,0.22);
+    }
+
+    100% {
+        box-shadow: 0 2px 8px rgba(255,255,255,0.30), 0 3px 6px rgba(255,255,255,0.22);
+    }
+`;
+
 const shadowField = keyframes`
 
 `;
 
 export const GameButton = styled.button`
-    background-color: yellow;
+    background-color: #d38627;
     color: white;
     padding: 1rem 2rem;
     padding-right: 3rem;
     font-family: 'Bigno';
     border: none;
     font-weight: bold;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
     font-size: ${({ fsize }) => fsize ? fsize : '3rem'};
+    &:focus, &:active {
+        outline: none;
+    }
+    animation: ${floatingEffect} 3s infinite;
+    &:hover {
+        padding: 1rem 3rem;
+        padding-right: 4rem;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+    ${({ disabled }) => disabled && `
+        cursor: inherit;
+        background-color: grey;
+    `}
 `;
 
 export const GameField = styled.input`

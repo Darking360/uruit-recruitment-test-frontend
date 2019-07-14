@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Spinner from './components/Spinner';
 import GameSetup from './containers/GameSetup';
 import styled from 'styled-components';
@@ -17,13 +17,24 @@ const AppContainer = styled.section`
 
 // Add state to manage current screen
 
-function App() {
-  return (
-    <AppContainer className="App">
-      <Spinner width="10%" />
-      <GameSetup />
-    </AppContainer>
-  );
+class App extends Component {
+
+  state = {
+    currentScreen: 'setup',
+    game: null,
+    player1: null,
+    player2: null,
+    winner: null
+  };
+
+  render() {
+    return (
+      <AppContainer className="App">
+        <Spinner width="10%" />
+        <GameSetup />
+      </AppContainer>
+    );
+  }
 }
 
 export default App;
