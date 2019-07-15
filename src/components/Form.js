@@ -98,6 +98,7 @@ export const GameFieldSet = ({ value, onChange, label, name }) => {
                 onChange={onChange}
                 name={name}
                 id={name}
+                autoComplete={'off'}
             />
         </FieldSet>
     );

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { GameFieldSet, GameButton } from '../components/Form';
 import AvatarPicker from '../components/AvatarPicker';
 import styled from 'styled-components';
+import media from "styled-media-query";
 import Spinner from '../components/Spinner';
 import { createUser, createGame } from '../api';
 import { alertError } from '../utils';
@@ -14,6 +15,9 @@ const GameSetupContainer = styled.section`
     align-items: center;
     width: 75%;
     margin: 0 auto;
+    h1,h2,h3 {
+        text-align: center;
+    }
     h1 {
         font-size: 3rem;
         margin-bottom: 0;
@@ -29,6 +33,18 @@ const GameSetupContainer = styled.section`
         margin-top: 1rem;
         box-sizing: border-box;
     }
+    ${media.lessThan("large")`
+        h1 {
+            font-size: 2.2rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+        }
+        h3 {
+            margin-top: 0;
+            font-size: 1rem;
+        }
+    `}
 `;
 
 const PlayerOptions = styled.div`
@@ -41,6 +57,9 @@ const PlayerOptions = styled.div`
         margin-top: 1rem;   
     }
     margin-bottom: 1rem;
+    ${media.lessThan("large")`
+        flex-direction: column
+    `}
 `;
 
 const SetupRow = styled.form`
@@ -49,6 +68,9 @@ const SetupRow = styled.form`
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    ${media.lessThan("large")`
+        flex-direction: column
+    `}
 `;
 
 class GameSetup extends Component {

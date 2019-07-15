@@ -12,6 +12,7 @@
     "react-pose": "^4.0.8",
     "react-scripts": "3.0.1",
     "styled-components": "^4.3.2",
+    "styled-media-query": "^2.1.2",
     "sweetalert2": "^8.13.4"
   },
   "scripts": {

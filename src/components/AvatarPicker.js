@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import styled, { keyframes } from 'styled-components';
+import media from "styled-media-query";
 
 let mojs = {}
 
@@ -52,6 +53,10 @@ const avatars = [
 export const Avatar = styled.img`
     width: 6rem;
     height: 6rem;
+    ${media.lessThan("large")`
+        width: 3rem;
+        height: 3rem;
+    `}
     object-fit: fill;
     border: 3px solid rgba(255,255,255,0.75);
     border-radius: 50%;

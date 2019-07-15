@@ -4,6 +4,7 @@ import Game from './containers/Game';
 import Winner from './containers/Winner';
 import Statistics from './containers/Statistics';
 import styled, { keyframes } from 'styled-components';
+import media from "styled-media-query";
 import { GameButton, floatingEffect } from './components/Form';
 
 const shakeRotateAnimation = keyframes`
@@ -72,6 +73,14 @@ const PositionedGameButton = styled(GameButton)`
   &:hover {
     animation: ${floatingEffect} 3s infinite;
   }
+  ${media.lessThan("large")`
+    left: unset;
+    bottom: unset;
+    right: 5%;
+    top: 5%;
+    padding: 1rem;
+    font-size: 1.8rem;
+  `}
 `;
 
 const AppContainer = styled.section`
@@ -152,6 +161,7 @@ class App extends Component {
 
   render() {
     const { currentScreen } = this.state;
+    const displayIcon = window.innerWidth < 1170;
     return (
       <AppContainer className="App">
         <AppOverlay>
@@ -159,7 +169,7 @@ class App extends Component {
           {
             currentScreen !== 'statistics' && (
               <PositionedGameButton onClick={this.openStatistics}>
-                Leader Boards
+                { displayIcon ? '📝' : 'Leader Boards' }
               </PositionedGameButton>
             )
           }

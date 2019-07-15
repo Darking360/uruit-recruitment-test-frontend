@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import media from "styled-media-query";
 import PropTypes from 'prop-types';
 
 const rotate = keyframes`
@@ -46,6 +47,9 @@ const dash2 = keyframes`
 
 const SpinnerWrapper = styled.div`
     width: ${({ width }) => width ? width : '25%'};
+    ${media.lessThan("large")`
+        width: ${({ width }) => width ? '25%' : '50%'};
+    `}
     position: relative;
     margin: 0px auto;
     div.ad15 {
