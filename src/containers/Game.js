@@ -166,7 +166,7 @@ class Game extends Component {
                             <h3>{activePlayer.username}'s play</h3>
                         </div>
                         <div className="move-selector">
-                            <MovePicker 
+                            <MovePicker
                                 value={this.state[`${activeTag}Move`]}
                                 name={activeTag}
                                 onChange={this.selectMove}
@@ -174,7 +174,7 @@ class Game extends Component {
                         </div>
                     </div>
                     <div className="next-or-play">
-                        <GameButton noFont={loading} onClick={this.lockMove}>
+                        <GameButton disabled={loading} loadingAction={loading} noFont={loading} onClick={this.lockMove}>
                             {
                                 loading ? (<Spinner width="5rem" />)
                                 : buttonCopy

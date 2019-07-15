@@ -343,10 +343,13 @@ exports[`Game matches snapshot 1`] = `
                 className="next-or-play"
               >
                 <styled.button
+                  disabled={false}
+                  loadingAction={false}
                   noFont={false}
                   onClick={[Function]}
                 >
                   <StyledComponent
+                    disabled={false}
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
@@ -435,11 +438,13 @@ exports[`Game matches snapshot 1`] = `
                       }
                     }
                     forwardedRef={null}
+                    loadingAction={false}
                     noFont={false}
                     onClick={[Function]}
                   >
                     <button
                       className="sc-ifAKCX jmMePK"
+                      disabled={false}
                       onClick={[Function]}
                     >
                       SET MOVE
