@@ -1,4 +1,71 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# UruIT - Game Of Drones :fire:
+
+This project is the frontend part of the 2 parts of the test, the other repo contains all the API related logic, it can be found here: [UruIT - Game of Drones - API](https://lickaca.comp).
+
+## Instructions to run
+
+In this house we believe in our god Docker, so all the project is easible setup with it, so follow this simple steps:
+
+- Clone the project
+- Go to the project's directory
+- Run the project with docker compose to build the complete app, use sudo if you need permissions on your machine like this:
+
+```
+docker-compose up
+```
+
+Or
+
+```
+sudo docker-compose up
+```
+
+And that's it, you should get an app running on port 3001, and accesible by going into: [http://localhost:3000](http://localhost:3000).
+
+## But I don't like docker :cry:
+
+We got you covered, if you don't want to use it you can install all with a classic `npm install` and you're ready, like this:
+
+- Clone the project
+- Go to the project's directory
+- Run npm install
+- Run npm start 
+
+And that's it :bulb:
+
+## Where are the tests?
+
+You can run the tests wit docker or npm by itself running:
+
+```
+docker-compose run react npm run test
+```
+
+Or
+
+```
+sudo docker-compose run react npm run test
+```
+
+Or
+
+```
+npm run test
+```
+
+Depending on your case :eyes:
+
+## Project dependencies and versions
+
+Besides the project `package.json` dependencies, we have this dependencies if you want to take a look:
+
+// Table here
+
+## Rest of the project
+
+This project was generated with Create React App, so you have access to all the commands inside of it, if you're using docker, you just need to run `docker-compose run react <your_command_here>` to access the commands that it gives to you, which they're going to be listed below.
+
+[Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
