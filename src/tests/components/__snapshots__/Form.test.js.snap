@@ -64,6 +64,27 @@ exports[`Game Button matches snapshot 1`] = `
     font-size: ",
           [Function],
           ";
+    ",
+          [Function],
+          "
+    span {
+        font-size: 4rem;
+    }
+    ",
+          "
+    @media (max-width: ",
+          "1170px",
+          ") {
+      ",
+          "
+        &[disabled] {
+            font-size: unset;
+        }
+    ",
+          "
+    }
+  ",
+          "
     &:focus, &:active {
         outline: none;
     }

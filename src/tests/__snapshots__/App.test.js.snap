@@ -10,6 +10,7 @@ exports[`App matches snapshot 1`] = `
     />
     <Styled(styled.button)
       onClick={[Function]}
+      screen="setup"
     >
       📝
     </Styled(styled.button)>
@@ -98,10 +99,10 @@ exports[`Game Setup matches snapshot 1`] = `
         className="sc-bZQynM fbBCFa"
       >
         <Spinner
-          width="10%"
+          width="25%"
         >
           <styled.div
-            width="10%"
+            width="25%"
           >
             <StyledComponent
               forwardedComponent={
@@ -111,27 +112,12 @@ exports[`Game Setup matches snapshot 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-EHOje",
                     "isStatic": false,
-                    "lastClassName": "jCNvW",
+                    "lastClassName": "eloqNS",
                     "rules": Array [
                       "
     width: ",
                       [Function],
                       ";
-    ",
-                      "
-    @media (max-width: ",
-                      "1170px",
-                      ") {
-      ",
-                      "
-        width: ",
-                      [Function],
-                      ";
-    ",
-                      "
-    }
-  ",
-                      "
     position: relative;
     margin: 0px auto;
     div.ad15 {
@@ -266,11 +252,11 @@ exports[`Game Setup matches snapshot 1`] = `
                 }
               }
               forwardedRef={null}
-              width="10%"
+              width="25%"
             >
               <div
-                className="sc-EHOje jCNvW"
-                width="10%"
+                className="sc-EHOje eloqNS"
+                width="25%"
               >
                 <svg
                   className="overwatch-logo"
@@ -1088,7 +1074,7 @@ exports[`Game Setup matches snapshot 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "gwEiTK",
+                    "lastClassName": "jiVaLu",
                     "rules": Array [
                       "
     background-color: #d38627;
@@ -1105,6 +1091,27 @@ exports[`Game Setup matches snapshot 1`] = `
     font-size: ",
                       [Function],
                       ";
+    ",
+                      [Function],
+                      "
+    span {
+        font-size: 4rem;
+    }
+    ",
+                      "
+    @media (max-width: ",
+                      "1170px",
+                      ") {
+      ",
+                      "
+        &[disabled] {
+            font-size: unset;
+        }
+    ",
+                      "
+    }
+  ",
+                      "
     &:focus, &:active {
         outline: none;
     }
@@ -1155,13 +1162,15 @@ exports[`Game Setup matches snapshot 1`] = `
               type="button"
             >
               <button
-                className="sc-bdVaJa gwEiTK"
+                className="sc-bdVaJa jiVaLu"
                 disabled={true}
                 id="setup"
                 onClick={[Function]}
                 type="button"
               >
-                Play
+                <span>
+                  Play
+                </span>
               </button>
             </StyledComponent>
           </styled.button>

@@ -35,13 +35,26 @@ exports[`Game matches snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-gZMcBi",
             "isStatic": true,
-            "lastClassName": "dJQrXy",
+            "lastClassName": "bmOyb",
             "rules": Array [
               "
     width: 100%;
     min-height: 100vh;
     height: 100%;
     display: flex;
+    ",
+              "
+    @media (max-width: ",
+              "1170px",
+              ") {
+      ",
+              "
+        flex-direction: column;
+    ",
+              "
+    }
+  ",
+              "
 ",
             ],
           },
@@ -58,7 +71,7 @@ exports[`Game matches snapshot 1`] = `
       forwardedRef={null}
     >
       <section
-        className="sc-gZMcBi dJQrXy"
+        className="sc-gZMcBi bmOyb"
       >
         <styled.div>
           <StyledComponent
@@ -69,7 +82,7 @@ exports[`Game matches snapshot 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-gqjmRU",
                   "isStatic": true,
-                  "lastClassName": "fiSQVP",
+                  "lastClassName": "iSPpsc",
                   "rules": Array [
                     "
     width: 50%;
@@ -80,20 +93,71 @@ exports[`Game matches snapshot 1`] = `
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    div.round-info {
+    div.top-info {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h2 {
-            margin-top: 0;
-            font-size: 2.5em;
-        }
-        h3 {
-            margin-top: 0;
-            font-size: 2em;
+        div.round-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                margin-top: 0;
+                font-size: 2.5em;
+            }
+            h3 {
+                margin-top: 0;
+                font-size: 2em;
+            }
         }
     }
+    ",
+                    "
+    @media (max-width: ",
+                    "1170px",
+                    ") {
+      ",
+                    "
+        width: 100%;
+        max-height: 50vh;
+        min-height: 50vh;
+        height: 100%;
+        flex-direction: column;
+        div.top-info {
+            flex-direction: row;
+            div {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            div.move-selector {
+                h3 {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+                em {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+            div.round-info {
+                h2 {
+                    font-size: 1.8rem;
+                    text-align: center;
+                }
+                h3 {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+            }
+        }
+    ",
+                    "
+    }
+  ",
+                    "
 ",
                   ],
                 },
@@ -110,171 +174,176 @@ exports[`Game matches snapshot 1`] = `
             forwardedRef={null}
           >
             <div
-              className="sc-gqjmRU fiSQVP"
+              className="sc-gqjmRU iSPpsc"
             >
               <div
-                className="round-info"
+                className="top-info"
               >
-                <h2>
-                  Round 
-                  1
-                </h2>
-                <h3>
-                  's play
-                </h3>
-              </div>
-              <div
-                className="move-selector"
-              >
-                <MovePicker
-                  name="player1"
-                  onChange={[Function]}
-                  value={1}
+                <div
+                  className="round-info"
                 >
-                  <Styled(styled.div)>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-htpNat",
-                            "isStatic": true,
-                            "lastClassName": "csBEKn",
-                            "rules": Array [
-                              "
+                  <h2>
+                    Round 
+                    1
+                  </h2>
+                  <h3>
+                    's play
+                  </h3>
+                </div>
+                <div
+                  className="move-selector"
+                >
+                  <MovePicker
+                    name="player1"
+                    onChange={[Function]}
+                    value={1}
+                  >
+                    <Styled(styled.div)>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-htpNat",
+                              "isStatic": true,
+                              "lastClassName": "csBEKn",
+                              "rules": Array [
+                                "
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 ",
-                              "
+                                "
     flex-direction: column;
     font-size: 1.5em;
     em, h3 {
         margin-top: 1.5rem;
     }
 ",
+                              ],
+                            },
+                            "displayName": "Styled(styled.div)",
+                            "foldedComponentIds": Array [
+                              "sc-bwzfXH",
                             ],
-                          },
-                          "displayName": "Styled(styled.div)",
-                          "foldedComponentIds": Array [
-                            "sc-bwzfXH",
-                          ],
-                          "render": [Function],
-                          "styledComponentId": "sc-htpNat",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
+                            "render": [Function],
+                            "styledComponentId": "sc-htpNat",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
                         }
-                      }
-                      forwardedRef={[Function]}
-                    >
-                      <div
-                        className="sc-bwzfXH sc-htpNat csBEKn"
+                        forwardedRef={[Function]}
                       >
-                        <Styled(styled.img)
-                          alt="Avatar preview"
-                          onClick={[Function]}
-                          src="../images/paper.png"
+                        <div
+                          className="sc-bwzfXH sc-htpNat csBEKn"
                         >
-                          <StyledComponent
+                          <Styled(styled.img)
                             alt="Avatar preview"
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bxivhb",
-                                  "isStatic": false,
-                                  "lastClassName": "gQvybV",
-                                  "rules": Array [
-                                    "
+                            onClick={[Function]}
+                            src="../images/paper.png"
+                          >
+                            <StyledComponent
+                              alt="Avatar preview"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bxivhb",
+                                    "isStatic": false,
+                                    "lastClassName": "gQvybV",
+                                    "rules": Array [
+                                      "
     width: 6rem;
     height: 6rem;
     ",
-                                    "
+                                      "
     @media (max-width: ",
-                                    "1170px",
-                                    ") {
+                                      "1170px",
+                                      ") {
       ",
-                                    "
+                                      "
         width: 3rem;
         height: 3rem;
     ",
-                                    "
+                                      "
     }
   ",
-                                    "
+                                      "
     object-fit: fill;
     border: 3px solid rgba(255,255,255,0.75);
     border-radius: 50%;
     padding: 1rem;
     cursor: pointer;
     animation: ",
-                                    Keyframes {
-                                      "id": "sc-keyframes-jTmlpk",
-                                      "inject": [Function],
-                                      "name": "jTmlpk",
-                                      "rules": Array [
-                                        "@-webkit-keyframes jTmlpk{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 14px 28px rgba(255,255,255,0.25),0 10px 10px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
-                                        "@keyframes jTmlpk{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 14px 28px rgba(255,255,255,0.25),0 10px 10px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
-                                      ],
-                                      "toString": [Function],
-                                    },
-                                    " 3s infinite;
+                                      Keyframes {
+                                        "id": "sc-keyframes-jTmlpk",
+                                        "inject": [Function],
+                                        "name": "jTmlpk",
+                                        "rules": Array [
+                                          "@-webkit-keyframes jTmlpk{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 14px 28px rgba(255,255,255,0.25),0 10px 10px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+                                          "@keyframes jTmlpk{0%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}50%{box-shadow:0 14px 28px rgba(255,255,255,0.25),0 10px 10px rgba(255,255,255,0.22);}100%{box-shadow:0 2px 8px rgba(255,255,255,0.30),0 3px 6px rgba(255,255,255,0.22);}}",
+                                        ],
+                                        "toString": [Function],
+                                      },
+                                      " 3s infinite;
     transition: all 2s ease-in-out;
     position: relative;
     ",
-                                    [Function],
-                                    "
+                                      [Function],
+                                      "
 ",
-                                    "
+                                      "
     background-color: white;
 ",
+                                    ],
+                                  },
+                                  "displayName": "Styled(styled.img)",
+                                  "foldedComponentIds": Array [
+                                    "sc-bdVaJa",
                                   ],
-                                },
-                                "displayName": "Styled(styled.img)",
-                                "foldedComponentIds": Array [
-                                  "sc-bdVaJa",
-                                ],
-                                "render": [Function],
-                                "styledComponentId": "sc-bxivhb",
-                                "target": "img",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bxivhb",
+                                  "target": "img",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
                               }
-                            }
-                            forwardedRef={null}
-                            onClick={[Function]}
-                            src="../images/paper.png"
-                          >
-                            <img
-                              alt="Avatar preview"
-                              className="sc-bdVaJa sc-bxivhb gQvybV"
+                              forwardedRef={null}
                               onClick={[Function]}
                               src="../images/paper.png"
-                            />
-                          </StyledComponent>
-                        </Styled(styled.img)>
-                        <em>
-                          Tap the image or shake your phone to change your attack
-                        </em>
-                        <h3>
-                          Attacking with 
-                          paper
-                        </h3>
-                      </div>
-                    </StyledComponent>
-                  </Styled(styled.div)>
-                </MovePicker>
+                            >
+                              <img
+                                alt="Avatar preview"
+                                className="sc-bdVaJa sc-bxivhb gQvybV"
+                                onClick={[Function]}
+                                src="../images/paper.png"
+                              />
+                            </StyledComponent>
+                          </Styled(styled.img)>
+                          <em>
+                            Tap the image or shake your phone to change your attack
+                          </em>
+                          <h3>
+                            Attacking with 
+                            paper
+                          </h3>
+                        </div>
+                      </StyledComponent>
+                    </Styled(styled.div)>
+                  </MovePicker>
+                </div>
               </div>
               <div
                 className="next-or-play"
               >
                 <styled.button
+                  noFont={false}
                   onClick={[Function]}
                 >
                   <StyledComponent
@@ -285,7 +354,7 @@ exports[`Game matches snapshot 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-ifAKCX",
                           "isStatic": false,
-                          "lastClassName": "jPiUfU",
+                          "lastClassName": "jmMePK",
                           "rules": Array [
                             "
     background-color: #d38627;
@@ -302,6 +371,27 @@ exports[`Game matches snapshot 1`] = `
     font-size: ",
                             [Function],
                             ";
+    ",
+                            [Function],
+                            "
+    span {
+        font-size: 4rem;
+    }
+    ",
+                            "
+    @media (max-width: ",
+                            "1170px",
+                            ") {
+      ",
+                            "
+        &[disabled] {
+            font-size: unset;
+        }
+    ",
+                            "
+    }
+  ",
+                            "
     &:focus, &:active {
         outline: none;
     }
@@ -345,10 +435,11 @@ exports[`Game matches snapshot 1`] = `
                       }
                     }
                     forwardedRef={null}
+                    noFont={false}
                     onClick={[Function]}
                   >
                     <button
-                      className="sc-ifAKCX jPiUfU"
+                      className="sc-ifAKCX jmMePK"
                       onClick={[Function]}
                     >
                       SET MOVE
@@ -368,7 +459,7 @@ exports[`Game matches snapshot 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-VigVT",
                   "isStatic": true,
-                  "lastClassName": "fAfuKN",
+                  "lastClassName": "iSGujp",
                   "rules": Array [
                     "
     width: 50%;
@@ -378,6 +469,22 @@ exports[`Game matches snapshot 1`] = `
     display: flex;
     justify-content: center;
     align-items: center;
+    ",
+                    "
+    @media (max-width: ",
+                    "1170px",
+                    ") {
+      ",
+                    "
+        width: 100%;
+        max-height: 50vh;
+        min-height: 50vh;
+        justify-content: flex-start;
+    ",
+                    "
+    }
+  ",
+                    "
 ",
                   ],
                 },
@@ -394,7 +501,7 @@ exports[`Game matches snapshot 1`] = `
             forwardedRef={null}
           >
             <div
-              className="sc-VigVT fAfuKN"
+              className="sc-VigVT iSGujp"
             >
               <History
                 game={
@@ -430,7 +537,7 @@ exports[`Game matches snapshot 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-htoDjs",
                           "isStatic": true,
-                          "lastClassName": "bvJaQX",
+                          "lastClassName": "iSJsHV",
                           "rules": Array [
                             "
     width: 80%;
@@ -438,6 +545,19 @@ exports[`Game matches snapshot 1`] = `
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    ",
+                            "
+    @media (max-width: ",
+                            "1170px",
+                            ") {
+      ",
+                            "
+        width: 100%;
+    ",
+                            "
+    }
+  ",
+                            "
 ",
                           ],
                         },
@@ -454,7 +574,7 @@ exports[`Game matches snapshot 1`] = `
                     forwardedRef={null}
                   >
                     <div
-                      className="sc-htoDjs bvJaQX"
+                      className="sc-htoDjs iSJsHV"
                     >
                       <h2>
                         Score
@@ -468,15 +588,30 @@ exports[`Game matches snapshot 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "sc-dnqmqq",
                                 "isStatic": true,
-                                "lastClassName": "kxoMZK",
+                                "lastClassName": "cLNjBA",
                                 "rules": Array [
                                   "
-    height: 80%;
+    height: 100%;
     max-height: 80vh;
     width: 60%;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    ",
+                                  "
+    @media (max-width: ",
+                                  "1170px",
+                                  ") {
+      ",
+                                  "
+        max-height: 30vh;
+        padding-left: 0;
+        width: 80%;
+    ",
+                                  "
+    }
+  ",
+                                  "
     &::-webkit-scrollbar-track
     {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -512,7 +647,7 @@ exports[`Game matches snapshot 1`] = `
                           forwardedRef={null}
                         >
                           <ul
-                            className="sc-dnqmqq kxoMZK"
+                            className="sc-dnqmqq cLNjBA"
                           >
                             <Styled(Component)>
                               <StyledComponent

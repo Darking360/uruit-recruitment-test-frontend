@@ -233,7 +233,7 @@ exports[`Winner matches snapshot 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
                   "isStatic": false,
-                  "lastClassName": "evnORH",
+                  "lastClassName": "jorndJ",
                   "rules": Array [
                     "
     background-color: #d38627;
@@ -250,6 +250,27 @@ exports[`Winner matches snapshot 1`] = `
     font-size: ",
                     [Function],
                     ";
+    ",
+                    [Function],
+                    "
+    span {
+        font-size: 4rem;
+    }
+    ",
+                    "
+    @media (max-width: ",
+                    "1170px",
+                    ") {
+      ",
+                    "
+        &[disabled] {
+            font-size: unset;
+        }
+    ",
+                    "
+    }
+  ",
+                    "
     &:focus, &:active {
         outline: none;
     }
@@ -296,7 +317,7 @@ exports[`Winner matches snapshot 1`] = `
             onClick={[MockFunction]}
           >
             <button
-              className="sc-bdVaJa evnORH"
+              className="sc-bdVaJa jorndJ"
               onClick={[MockFunction]}
             >
               Play Again
