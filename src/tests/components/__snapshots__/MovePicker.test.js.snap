@@ -8,7 +8,7 @@ exports[`Movement Picker matches snapshot 1`] = `
     src="../images/paper.png"
   />
   <em>
-    Tap the image or shake your phone to change your attack
+    Tap the image to change your attack
   </em>
   <h3>
     Attacking with 

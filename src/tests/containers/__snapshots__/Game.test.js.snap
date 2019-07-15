@@ -327,7 +327,7 @@ exports[`Game matches snapshot 1`] = `
                             </StyledComponent>
                           </Styled(styled.img)>
                           <em>
-                            Tap the image or shake your phone to change your attack
+                            Tap the image to change your attack
                           </em>
                           <h3>
                             Attacking with 

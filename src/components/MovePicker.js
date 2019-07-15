@@ -73,7 +73,7 @@ class MovePicker extends Component {
                     alt='Avatar preview'
                     onClick={this.handleChange}
                 />
-                <em>Tap the image or shake your phone to change your attack</em>
+                <em>Tap the image to change your attack</em>
                 <h3>Attacking with {movements[value]}</h3>
             </Container>
         );
