@@ -1,5 +1,7 @@
 # UruIT - Game Of Drones - App 🔥
 
+[![CircleCI](https://circleci.com/gh/Darking360/uruit-recruitment-test-frontend.svg?style=svg)](https://circleci.com/gh/Darking360/uruit-recruitment-test-frontend)
+
 This project is the frontend part of the 2 parts of the test, the other repo contains all the API related logic, it can be found here: [UruIT - Game of Drones - API](https://github.com/Darking360/uruit-recruitment-test-backend).
 
 ## Instructions to run 🐋
