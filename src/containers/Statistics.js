@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import media from "styled-media-query";
 import Spinner from '../components/Spinner';
 import { GameButton } from '../components/Form';
 import { HistoryGrid, HistoryItem } from './History';
@@ -85,7 +86,7 @@ class Statistics extends Component {
                         <span>Wins</span>
                     </EnhancedItem>
                     {
-                        loading ? (<Spinner key="spinner" width="5rem" />)
+                        loading ? (<Spinner key="spinner" width={window.innerWidth < 1170 ? "5rem" : "5rem"} />)
                         : this.renderItems()
                     }
                 </HistoryGrid>

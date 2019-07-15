@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import media from "styled-media-query";
 
 export const floatingEffect = keyframes`
     0% {
@@ -28,6 +29,17 @@ export const GameButton = styled.button`
     transition: all .3s ease-in-out;
     cursor: pointer;
     font-size: ${({ fsize }) => fsize ? fsize : '3rem'};
+    ${({ noFont }) => noFont && `
+        font-size: unset;
+    `}
+    span {
+        font-size: 4rem;
+    }
+    ${media.lessThan("large")`
+        &[disabled] {
+            font-size: unset;
+        }
+    `}
     &:focus, &:active {
         outline: none;
     }

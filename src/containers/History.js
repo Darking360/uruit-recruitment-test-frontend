@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import posed, { PoseGroup } from 'react-pose';
+import media from "styled-media-query";
 import PropTypes from 'prop-types';
 
 const RowAnimation = posed.li({
@@ -16,15 +17,23 @@ const HistoryContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    ${media.lessThan("large")`
+        width: 100%;
+    `}
 `;
 
 export const HistoryGrid = styled.ul`
-    height: 80%;
+    height: 100%;
     max-height: 80vh;
     width: 60%;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    ${media.lessThan("large")`
+        max-height: 30vh;
+        padding-left: 0;
+        width: 80%;
+    `}
     &::-webkit-scrollbar-track
     {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);

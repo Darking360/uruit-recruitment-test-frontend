@@ -98,8 +98,11 @@ class GameSetup extends Component {
 
     handleGameCreation = (e) => {
         e.preventDefault();
-        // TODO Add validations here please!
         const { player1, player2, player1Avatar, player2Avatar } = this.state;
+        if (player1 === player2) {
+            alertError('Please choose different usernames');
+            return;
+        }
         const { setGame } = this.props;
         this.setState({ loading: true }, async () => {
             try {
@@ -123,7 +126,7 @@ class GameSetup extends Component {
         const disabled = this.isDisabled();
         return (
             <GameSetupContainer>
-                <Spinner width="10%" />
+                <Spinner width={window.innerWidth < 1170 ? "25%" : "10%"} />
                 <h1>UruIt Game of Drones</h1>
                 <h2>Welcome to the Hill</h2>
                 <h3>Get your name and the hill will provide you an avatar</h3>
@@ -166,7 +169,7 @@ class GameSetup extends Component {
                     >
                         {
                             loading ? (<Spinner width="5rem" />)
-                            : "Play"
+                            : <span>Play</span>
                         }
                     </GameButton>
                 </div>

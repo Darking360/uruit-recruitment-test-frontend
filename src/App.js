@@ -80,6 +80,12 @@ const PositionedGameButton = styled(GameButton)`
     top: 5%;
     padding: 1rem;
     font-size: 1.8rem;
+    ${({ screen }) => screen === 'game' && `
+      left: unset;
+      bottom: unset;
+      right: 5%;
+      top: 48%;
+    `}
   `}
 `;
 
@@ -168,7 +174,7 @@ class App extends Component {
           { this.getActiveScreen() }
           {
             currentScreen !== 'statistics' && (
-              <PositionedGameButton onClick={this.openStatistics}>
+              <PositionedGameButton screen={currentScreen} onClick={this.openStatistics}>
                 { displayIcon ? '📝' : 'Leader Boards' }
               </PositionedGameButton>
             )
