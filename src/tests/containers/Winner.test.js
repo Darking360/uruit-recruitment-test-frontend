@@ -3,6 +3,7 @@ import Winner from "../../containers/Winner";
 import { shallow, mount, render } from "enzyme";
 
 const initialProps = {
+    resetGame: jest.fn(),
     player1: {
         _id: 1,
         username: 'Miguel',

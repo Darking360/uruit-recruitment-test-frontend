@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`History matches snapshot 1`] = `
-<Statistics>
+<Statistics
+  goBackTo={[MockFunction]}
+  lastScreen="setup"
+>
   <styled.section>
     <StyledComponent
       forwardedComponent={

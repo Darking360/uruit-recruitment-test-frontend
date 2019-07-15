@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Game matches snapshot 1`] = `
-<GameSetup
+<Game
   game={
     Object {
       "_id": 1,
@@ -595,5 +595,5 @@ exports[`Game matches snapshot 1`] = `
       </section>
     </StyledComponent>
   </styled.section>
-</GameSetup>
+</Game>
 `;

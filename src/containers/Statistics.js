@@ -5,6 +5,7 @@ import { GameButton } from '../components/Form';
 import { HistoryGrid, HistoryItem } from './History';
 import { getUsers } from '../api';
 import { alertError } from '../utils';
+import PropTypes from 'prop-types';
 
 const StatisticsContainer = styled.section`
     width: 80%;
@@ -93,5 +94,10 @@ class Statistics extends Component {
         );
     }
 }
+
+Statistics.propTypes = {
+    goBackTo: PropTypes.func.isRequired, 
+    lastScreen: PropTypes.string.isRequired
+};
 
 export default Statistics;

@@ -23,9 +23,4 @@ describe('Spinner', () => {
       expect(wrapper.find('svg.overwatch-logo').length).toBe(1);
     });
 
-    it('renders even with wrong prop type :: width', () => {
-      const wrapper = shallow(<Spinner width={20} />);
-      expect(wrapper.find('svg.overwatch-logo').length).toBe(1);
-    });
-
 });

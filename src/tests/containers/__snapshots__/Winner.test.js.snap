@@ -51,6 +51,7 @@ exports[`Winner matches snapshot 1`] = `
       "username": "Juan",
     }
   }
+  resetGame={[MockFunction]}
 >
   <styled.section>
     <StyledComponent
@@ -207,7 +208,9 @@ exports[`Winner matches snapshot 1`] = `
           Juan
            is the new EMPEROR!
         </h3>
-        <styled.button>
+        <styled.button
+          onClick={[MockFunction]}
+        >
           <StyledComponent
             forwardedComponent={
               Object {
@@ -276,9 +279,11 @@ exports[`Winner matches snapshot 1`] = `
               }
             }
             forwardedRef={null}
+            onClick={[MockFunction]}
           >
             <button
               className="sc-bdVaJa evnORH"
+              onClick={[MockFunction]}
             >
               Play Again
             </button>

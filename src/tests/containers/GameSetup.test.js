@@ -11,11 +11,11 @@ export const typeEvent2 = {target: {name: 'player2', value: "Juan"}};
 
 describe("Game Setup", () => {
   it("renders without crashing", () => {
-    mount(<GameSetup />);
+    mount(<GameSetup setGame={jest.fn()} />);
   });
 
   it("matches snapshot", () => {
-    const wrapper = mount(<GameSetup />);
+    const wrapper = mount(<GameSetup setGame={jest.fn()} />);
     expect(wrapper).toMatchSnapshot();
   });
 

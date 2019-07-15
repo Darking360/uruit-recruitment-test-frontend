@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
-import { floatingEffect, Avatar, AvatarPickerContainer } from './AvatarPicker';
+import styled from 'styled-components';
+import { Avatar, AvatarPickerContainer } from './AvatarPicker';
 
 let mojs = {}
 

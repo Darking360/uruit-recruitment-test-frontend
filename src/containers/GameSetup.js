@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Spinner from '../components/Spinner';
 import { createUser, createGame } from '../api';
 import { alertError } from '../utils';
+import PropTypes from 'prop-types';
 
 const GameSetupContainer = styled.section`
     display: flex;
@@ -151,5 +152,9 @@ class GameSetup extends Component {
         );
     }
 }
+
+GameSetup.propTypes = {
+    setGame: PropTypes.func.isRequired
+};
 
 export default GameSetup;

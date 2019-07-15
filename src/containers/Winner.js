@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { GameButton } from '../components/Form';
 import AvatarPicker from '../components/AvatarPicker';
+import PropTypes from 'prop-types';
 
 const WinnerContainer = styled.section`
     width: 100%;
@@ -27,5 +28,12 @@ const Winner = (props) => {
         </WinnerContainer>
     );
 }
+
+Winner.propTypes = {
+    player1: PropTypes.object.isRequired,
+    player2: PropTypes.object.isRequired,
+    game: PropTypes.object.isRequired,
+    resetGame: PropTypes.func.isRequired
+};
 
 export default Winner;

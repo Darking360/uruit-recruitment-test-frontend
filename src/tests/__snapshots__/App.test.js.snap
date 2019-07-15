@@ -18,7 +18,9 @@ exports[`App matches snapshot 1`] = `
 `;
 
 exports[`Game Setup matches snapshot 1`] = `
-<GameSetup>
+<GameSetup
+  setGame={[MockFunction]}
+>
   <styled.section>
     <StyledComponent
       forwardedComponent={

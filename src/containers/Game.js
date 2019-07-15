@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { alertError } from '../utils';
 import { addPlayToGame } from '../api';
 import History from './History';
+import PropTypes from 'prop-types';
 
 const GameContainer = styled.section`
     width: 100%;
@@ -49,7 +50,7 @@ const CountPanel = styled.div`
     align-items: center;
 `;
 
-class GameSetup extends Component {
+class Game extends Component {
 
     state = {
         round: 1,
@@ -136,4 +137,11 @@ class GameSetup extends Component {
     }
 }
 
-export default GameSetup;
+Game.propTypes = {
+    player1: PropTypes.object,
+    player2: PropTypes.object,
+    game: PropTypes.object,
+    updateGame: PropTypes.func
+};
+
+export default Game;

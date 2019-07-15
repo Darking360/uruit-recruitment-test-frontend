@@ -78,20 +78,20 @@ describe("History", () => {
   });
 
   it("renders without crashing", async done => {
-    mount(<Statistics />);
+    mount(<Statistics goBackTo={jest.fn()} lastScreen="setup" />);
     await new Promise(resolve => setTimeout(() => resolve(), 0));
     done();
   });
 
   it("matches snapshot", async done => {
-    const wrapper = mount(<Statistics />);
+    const wrapper = mount(<Statistics goBackTo={jest.fn()} lastScreen="setup" />);
     await new Promise(resolve => setTimeout(() => resolve(), 0));
     expect(wrapper).toMatchSnapshot();
     done();
   });
 
   it("renders correct number of rows", async done => {
-    const wrapper = mount(<Statistics />);
+    const wrapper = mount(<Statistics goBackTo={jest.fn()} lastScreen="setup" />);
     await new Promise(resolve => setTimeout(() => resolve(), 0));
     wrapper.update();
     expect(wrapper.find(Statistics).find("li").length).toBe(
@@ -101,7 +101,7 @@ describe("History", () => {
   });
 
   it("renders last and first row correct names", async done => {
-    const wrapper = mount(<Statistics />);
+    const wrapper = mount(<Statistics goBackTo={jest.fn()} lastScreen="setup" />);
     await new Promise(resolve => setTimeout(() => resolve(), 0));
     wrapper.update();
     const spans = wrapper

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import posed, { PoseGroup } from 'react-pose';
+import PropTypes from 'prop-types';
 
 const RowAnimation = posed.li({
     enter: {
@@ -88,5 +89,9 @@ class History extends Component {
         );
     }
 }
+
+History.propTypes = {
+    game: PropTypes.object.isRequired
+};
 
 export default History;
