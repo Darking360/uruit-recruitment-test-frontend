@@ -106,8 +106,8 @@ class GameSetup extends Component {
         const { setGame } = this.props;
         this.setState({ loading: true }, async () => {
             try {
-                const { data: player1Response } = await createUser(player1, player1Avatar);
-                const { data: player2Response } = await createUser(player2, player2Avatar);
+                const { data: player1Response } = await createUser(player1.toLowerCase(), player1Avatar);
+                const { data: player2Response } = await createUser(player2.toLowerCase(), player2Avatar);
                 const { data: game } = await createGame(player1Response._id, player2Response._id);
                 setGame(player1Response, player2Response, game);
             } catch (error) {
