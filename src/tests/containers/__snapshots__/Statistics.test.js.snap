@@ -196,12 +196,27 @@ exports[`History matches snapshot 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-bdVaJa",
                           "isStatic": false,
-                          "lastClassName": "fyxaru",
+                          "lastClassName": "gYZPsW",
                           "rules": Array [
                             "
     width: ",
                             [Function],
                             ";
+    ",
+                            "
+    @media (max-width: ",
+                            "1170px",
+                            ") {
+      ",
+                            "
+        width: ",
+                            [Function],
+                            ";
+    ",
+                            "
+    }
+  ",
+                            "
     position: relative;
     margin: 0px auto;
     div.ad15 {
@@ -339,7 +354,7 @@ exports[`History matches snapshot 1`] = `
                     width="5rem"
                   >
                     <div
-                      className="sc-bdVaJa fyxaru"
+                      className="sc-bdVaJa gYZPsW"
                       width="5rem"
                     >
                       <svg

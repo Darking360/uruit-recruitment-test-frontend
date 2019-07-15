@@ -11,7 +11,7 @@ exports[`App matches snapshot 1`] = `
     <Styled(styled.button)
       onClick={[Function]}
     >
-      Leader Boards
+      📝
     </Styled(styled.button)>
   </styled.div>
 </styled.section>
@@ -30,7 +30,7 @@ exports[`Game Setup matches snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bZQynM",
             "isStatic": true,
-            "lastClassName": "cdqvId",
+            "lastClassName": "fbBCFa",
             "rules": Array [
               "
     display: flex;
@@ -39,6 +39,9 @@ exports[`Game Setup matches snapshot 1`] = `
     align-items: center;
     width: 75%;
     margin: 0 auto;
+    h1,h2,h3 {
+        text-align: center;
+    }
     h1 {
         font-size: 3rem;
         margin-bottom: 0;
@@ -54,6 +57,28 @@ exports[`Game Setup matches snapshot 1`] = `
         margin-top: 1rem;
         box-sizing: border-box;
     }
+    ",
+              "
+    @media (max-width: ",
+              "1170px",
+              ") {
+      ",
+              "
+        h1 {
+            font-size: 2.2rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+        }
+        h3 {
+            margin-top: 0;
+            font-size: 1rem;
+        }
+    ",
+              "
+    }
+  ",
+              "
 ",
             ],
           },
@@ -70,7 +95,7 @@ exports[`Game Setup matches snapshot 1`] = `
       forwardedRef={null}
     >
       <section
-        className="sc-bZQynM cdqvId"
+        className="sc-bZQynM fbBCFa"
       >
         <Spinner
           width="10%"
@@ -86,12 +111,27 @@ exports[`Game Setup matches snapshot 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-EHOje",
                     "isStatic": false,
-                    "lastClassName": "bodGRv",
+                    "lastClassName": "jCNvW",
                     "rules": Array [
                       "
     width: ",
                       [Function],
                       ";
+    ",
+                      "
+    @media (max-width: ",
+                      "1170px",
+                      ") {
+      ",
+                      "
+        width: ",
+                      [Function],
+                      ";
+    ",
+                      "
+    }
+  ",
+                      "
     position: relative;
     margin: 0px auto;
     div.ad15 {
@@ -229,7 +269,7 @@ exports[`Game Setup matches snapshot 1`] = `
               width="10%"
             >
               <div
-                className="sc-EHOje bodGRv"
+                className="sc-EHOje jCNvW"
                 width="10%"
               >
                 <svg
@@ -386,7 +426,7 @@ exports[`Game Setup matches snapshot 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-htoDjs",
                   "isStatic": true,
-                  "lastClassName": "fMEHki",
+                  "lastClassName": "jsMqwK",
                   "rules": Array [
                     "
     display: flex;
@@ -394,6 +434,19 @@ exports[`Game Setup matches snapshot 1`] = `
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    ",
+                    "
+    @media (max-width: ",
+                    "1170px",
+                    ") {
+      ",
+                    "
+        flex-direction: column
+    ",
+                    "
+    }
+  ",
+                    "
 ",
                   ],
                 },
@@ -411,7 +464,7 @@ exports[`Game Setup matches snapshot 1`] = `
             onSubmit={[Function]}
           >
             <form
-              className="sc-htoDjs fMEHki"
+              className="sc-htoDjs jsMqwK"
               onSubmit={[Function]}
             >
               <styled.div>
@@ -423,7 +476,7 @@ exports[`Game Setup matches snapshot 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-gzVnrw",
                         "isStatic": true,
-                        "lastClassName": "gZzZIM",
+                        "lastClassName": "cdBbUR",
                         "rules": Array [
                           "
     display: flex;
@@ -435,6 +488,19 @@ exports[`Game Setup matches snapshot 1`] = `
         margin-top: 1rem;   
     }
     margin-bottom: 1rem;
+    ",
+                          "
+    @media (max-width: ",
+                          "1170px",
+                          ") {
+      ",
+                          "
+        flex-direction: column
+    ",
+                          "
+    }
+  ",
+                          "
 ",
                         ],
                       },
@@ -451,7 +517,7 @@ exports[`Game Setup matches snapshot 1`] = `
                   forwardedRef={null}
                 >
                   <div
-                    className="sc-gzVnrw gZzZIM"
+                    className="sc-gzVnrw cdBbUR"
                   >
                     <AvatarPicker
                       name="player1Avatar"
@@ -506,11 +572,25 @@ exports[`Game Setup matches snapshot 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "sc-bxivhb",
                                       "isStatic": false,
-                                      "lastClassName": "cENUZK",
+                                      "lastClassName": "dSWXCf",
                                       "rules": Array [
                                         "
     width: 6rem;
     height: 6rem;
+    ",
+                                        "
+    @media (max-width: ",
+                                        "1170px",
+                                        ") {
+      ",
+                                        "
+        width: 3rem;
+        height: 3rem;
+    ",
+                                        "
+    }
+  ",
+                                        "
     object-fit: fill;
     border: 3px solid rgba(255,255,255,0.75);
     border-radius: 50%;
@@ -552,7 +632,7 @@ exports[`Game Setup matches snapshot 1`] = `
                               >
                                 <img
                                   alt="Avatar preview"
-                                  className="sc-bxivhb cENUZK"
+                                  className="sc-bxivhb dSWXCf"
                                   onClick={[Function]}
                                   src="../images/OW-icon_bastion.svg"
                                 />
@@ -615,12 +695,14 @@ exports[`Game Setup matches snapshot 1`] = `
                               Player 1
                             </label>
                             <styled.input
+                              autoComplete="off"
                               id="player1"
                               name="player1"
                               onChange={[Function]}
                               value=""
                             >
                               <StyledComponent
+                                autoComplete="off"
                                 forwardedComponent={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
@@ -668,6 +750,7 @@ exports[`Game Setup matches snapshot 1`] = `
                                 value=""
                               >
                                 <input
+                                  autoComplete="off"
                                   className="sc-bwzfXH jWXqGE"
                                   id="player1"
                                   name="player1"
@@ -692,7 +775,7 @@ exports[`Game Setup matches snapshot 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-gzVnrw",
                         "isStatic": true,
-                        "lastClassName": "gZzZIM",
+                        "lastClassName": "cdBbUR",
                         "rules": Array [
                           "
     display: flex;
@@ -704,6 +787,19 @@ exports[`Game Setup matches snapshot 1`] = `
         margin-top: 1rem;   
     }
     margin-bottom: 1rem;
+    ",
+                          "
+    @media (max-width: ",
+                          "1170px",
+                          ") {
+      ",
+                          "
+        flex-direction: column
+    ",
+                          "
+    }
+  ",
+                          "
 ",
                         ],
                       },
@@ -720,7 +816,7 @@ exports[`Game Setup matches snapshot 1`] = `
                   forwardedRef={null}
                 >
                   <div
-                    className="sc-gzVnrw gZzZIM"
+                    className="sc-gzVnrw cdBbUR"
                   >
                     <AvatarPicker
                       name="player2Avatar"
@@ -775,11 +871,25 @@ exports[`Game Setup matches snapshot 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "sc-bxivhb",
                                       "isStatic": false,
-                                      "lastClassName": "cENUZK",
+                                      "lastClassName": "dSWXCf",
                                       "rules": Array [
                                         "
     width: 6rem;
     height: 6rem;
+    ",
+                                        "
+    @media (max-width: ",
+                                        "1170px",
+                                        ") {
+      ",
+                                        "
+        width: 3rem;
+        height: 3rem;
+    ",
+                                        "
+    }
+  ",
+                                        "
     object-fit: fill;
     border: 3px solid rgba(255,255,255,0.75);
     border-radius: 50%;
@@ -821,7 +931,7 @@ exports[`Game Setup matches snapshot 1`] = `
                               >
                                 <img
                                   alt="Avatar preview"
-                                  className="sc-bxivhb cENUZK"
+                                  className="sc-bxivhb dSWXCf"
                                   onClick={[Function]}
                                   src="../images/OW-icon_mercy.svg"
                                 />
@@ -884,12 +994,14 @@ exports[`Game Setup matches snapshot 1`] = `
                               Player 2
                             </label>
                             <styled.input
+                              autoComplete="off"
                               id="player2"
                               name="player2"
                               onChange={[Function]}
                               value=""
                             >
                               <StyledComponent
+                                autoComplete="off"
                                 forwardedComponent={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
@@ -937,6 +1049,7 @@ exports[`Game Setup matches snapshot 1`] = `
                                 value=""
                               >
                                 <input
+                                  autoComplete="off"
                                   className="sc-bwzfXH jWXqGE"
                                   id="player2"
                                   name="player2"

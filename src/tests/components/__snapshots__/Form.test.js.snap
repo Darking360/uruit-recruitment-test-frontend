@@ -170,6 +170,7 @@ exports[`Game Fieldset matches snapshot 1`] = `
     Label
   </label>
   <styled.input
+    autoComplete="off"
     id="player1"
     name="player1"
     onChange={[MockFunction]}

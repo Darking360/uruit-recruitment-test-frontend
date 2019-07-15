@@ -188,11 +188,25 @@ exports[`Game matches snapshot 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bxivhb",
                                   "isStatic": false,
-                                  "lastClassName": "jelUbf",
+                                  "lastClassName": "gQvybV",
                                   "rules": Array [
                                     "
     width: 6rem;
     height: 6rem;
+    ",
+                                    "
+    @media (max-width: ",
+                                    "1170px",
+                                    ") {
+      ",
+                                    "
+        width: 3rem;
+        height: 3rem;
+    ",
+                                    "
+    }
+  ",
+                                    "
     object-fit: fill;
     border: 3px solid rgba(255,255,255,0.75);
     border-radius: 50%;
@@ -239,7 +253,7 @@ exports[`Game matches snapshot 1`] = `
                           >
                             <img
                               alt="Avatar preview"
-                              className="sc-bdVaJa sc-bxivhb jelUbf"
+                              className="sc-bdVaJa sc-bxivhb gQvybV"
                               onClick={[Function]}
                               src="../images/paper.png"
                             />
