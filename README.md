@@ -1,10 +1,10 @@
-# UruIT - Game Of Drones :fire:
+# UruIT - Game Of Drones - App 🔥
 
-This project is the frontend part of the 2 parts of the test, the other repo contains all the API related logic, it can be found here: [UruIT - Game of Drones - API](https://lickaca.comp).
+This project is the frontend part of the 2 parts of the test, the other repo contains all the API related logic, it can be found here: [UruIT - Game of Drones - API](https://github.com/Darking360/uruit-recruitment-test-backend).
 
-## Instructions to run
+## Instructions to run 🐋
 
-In this house we believe in our god Docker, so all the project is easible setup with it, so follow this simple steps:
+In this house we believe in our god Docker 🐋 so all the project is easible setup with it, so follow this simple steps:
 
 - Clone the project
 - Go to the project's directory
@@ -22,7 +22,7 @@ sudo docker-compose up
 
 And that's it, you should get an app running on port 3001, and accesible by going into: [http://localhost:3000](http://localhost:3000).
 
-## But I don't like docker :cry:
+## But I don't like docker 😭
 
 We got you covered, if you don't want to use it you can install all with a classic `npm install` and you're ready, like this:
 
@@ -31,9 +31,9 @@ We got you covered, if you don't want to use it you can install all with a class
 - Run npm install
 - Run npm start 
 
-And that's it :bulb:
+And that's it 💡
 
-## Where are the tests?
+## Where are the tests? 👀
 
 You can run the tests wit docker or npm by itself running:
 
@@ -53,13 +53,18 @@ Or
 npm run test
 ```
 
-Depending on your case :eyes:
+Depending on your case 👀
 
 ## Project dependencies and versions
 
 Besides the project `package.json` dependencies, we have this dependencies if you want to take a look:
 
-// Table here
+| Technology        | Version            |
+| ------------- |:-------------:|
+| node      | ^11.10.0 |
+| npm      | ^6.7.0      |
+| docker | 18.03.0-ce, build 0520e24302      |
+| docker-compose | version 1.20.1, build unknown      |
 
 ## Rest of the project
 
