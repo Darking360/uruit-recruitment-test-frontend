@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import media from "styled-media-query";
 import Spinner from '../components/Spinner';
 import { GameButton } from '../components/Form';
 import { HistoryGrid, HistoryItem } from './History';

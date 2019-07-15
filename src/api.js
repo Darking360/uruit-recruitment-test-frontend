@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = process.env.NODE_ENV === 'production' ? 'tbd' : 'http://localhost:3000';
+const baseUrl = process.env.NODE_ENV === 'production' ? 'https://uruit-game-of-drones-backend.herokuapp.com' : 'http://localhost:3000';
 
 export function createUser(username, avatar) {
     return axios.post(`${baseUrl}/users`, {
