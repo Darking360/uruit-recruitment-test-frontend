@@ -129,7 +129,7 @@ class GameSetup extends Component {
                 <Spinner width={window.innerWidth < 1170 ? "25%" : "10%"} />
                 <h1>UruIt Game of Drones</h1>
                 <h2>Welcome to the Hill</h2>
-                <h3>Get your name and the hill will provide you an avatar</h3>
+                <h3>Get your name and tap the avatar so the hill can change it for you</h3>
                 <SetupRow onSubmit={this.handleGameCreation}>
                     <PlayerOptions>
                         <AvatarPicker

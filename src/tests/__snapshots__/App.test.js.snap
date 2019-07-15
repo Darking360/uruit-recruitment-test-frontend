@@ -399,7 +399,7 @@ exports[`Game Setup matches snapshot 1`] = `
           Welcome to the Hill
         </h2>
         <h3>
-          Get your name and the hill will provide you an avatar
+          Get your name and tap the avatar so the hill can change it for you
         </h3>
         <styled.form
           onSubmit={[Function]}
