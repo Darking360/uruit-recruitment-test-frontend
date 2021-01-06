@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@mojs/core": "^0.288.2",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "formik": "^1.5.8",
     "mo-js": "^0.288.2",
     "react": "^16.8.6",
